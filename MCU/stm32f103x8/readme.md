@@ -6,6 +6,9 @@ There are two options for flashing binaries onto the target MCU, using a USB boo
 
 Development has been tested on Ubuntu 16.04LTS
 
+This peripheral library implements libopencm3 http://libopencm3.org/ for many of its features. Licensing and documentation can
+be found under lib/stm32f1x3/libopencm3.
+
 # Installation
 
 ## Toolchain
