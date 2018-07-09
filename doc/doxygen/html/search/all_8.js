@@ -15,6 +15,7 @@ var searchData=
   ['i2c_5fwrite',['I2C_write',['../group__I2C.html#ga74a87cc9aa42a9956b23f3dc6e67ca99',1,'I2C_write(i2c_periph peripheral, uint8_t byte):&#160;stm32f1x3_i2c.c'],['../group__I2C.html#ga74a87cc9aa42a9956b23f3dc6e67ca99',1,'I2C_write(i2c_periph peripheral, uint8_t byte):&#160;stm32f1x3_i2c.c']]],
   ['idle',['idle',['../group__FIFO8.html#gab78135bef82dddce62cfde373cfd35f3',1,'FIFO8']]],
   ['idr_5foffset',['IDR_OFFSET',['../group__GPIO.html#ggaee61cf071bf137a841cb2d2c6ce81557a638cf51ced63ec94644d5a9ff4f5258b',1,'stm32f1x3_gpio.h']]],
+  ['introduction',['Introduction',['../index.html',1,'']]],
   ['iwdg',['IWDG',['../group__IWDG.html',1,'']]],
   ['iwdg_5ffeed',['IWDG_feed',['../group__IWDG.html#gaa2128ac804bc549094158e1ed654ccb4',1,'IWDG_feed(void):&#160;stm32f1x3_iwdg.c'],['../group__IWDG.html#gaa2128ac804bc549094158e1ed654ccb4',1,'IWDG_feed(void):&#160;stm32f1x3_iwdg.c']]],
   ['iwdg_5fresetcheck',['IWDG_resetCheck',['../group__IWDG.html#ga31d3cb507810799cb06183abd212559b',1,'IWDG_resetCheck(void):&#160;stm32f1x3_iwdg.c'],['../group__IWDG.html#ga31d3cb507810799cb06183abd212559b',1,'IWDG_resetCheck(void):&#160;stm32f1x3_iwdg.c']]],

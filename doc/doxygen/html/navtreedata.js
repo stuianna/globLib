@@ -1,17 +1,9 @@
 var NAVTREE =
 [
-  [ "glob_lib", "index.html", [
-    [ "Todo List", "todo.html", null ],
-    [ "Bug List", "bug.html", null ],
+  [ "GlobLib", "index.html", [
+    [ "Introduction", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
-    [ "Data Structures", "annotated.html", [
-      [ "Data Structures", "annotated.html", "annotated_dup" ],
-      [ "Data Structure Index", "classes.html", null ],
-      [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Variables", "functions_vars.html", null ]
-      ] ]
-    ] ],
+    [ "Data Structure Index", "classes.html", null ],
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "Globals", "globals.html", [
@@ -28,13 +20,13 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"group__FIFO8.html#ga23123cbd9d3e04f0190c8da9b2cff06d",
-"group__I2C.html#ga2a467e965d791ec6a664ea8189c998ef",
-"group__MPU6050.html#ga4866cf49e2d3fd12c9d4b72da3e39574",
-"group__SPI.html#gga10a967d0a00b4e2a0cf513ae6444a746a1eae4fe3047bf4fbef593e1d39562f45",
-"group__TIMERS.html#ga5f11a3aa331a18263ca097048a25e4d2",
-"stm32f1x3__iwdg_8h.html"
+"classes.html",
+"group__FIFO8.html#ga3a004b63e5ea923ed961eb02dc745a6b",
+"group__I2C.html#ga3d9ce19098f67573ce7aae875f3cbe6f",
+"group__MPU6050.html#ga59534605a5de50626e368f9d2f52fbc9",
+"group__SPI.html#gga10a967d0a00b4e2a0cf513ae6444a746a97ce763136b0802785b49cf4d507e1b0",
+"group__TIMERS.html#ga90028e095f2a7a5490b5e10109bb18c4",
+"stm32f1x3__power_8c.html#a80b8e496817c48aab711bab6cb8a148d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

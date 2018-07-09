@@ -1,7 +1,6 @@
 # Introduction
 
 This library contains low level modules designed to interface with STM32F103 perihperals.
-Modules are designed to be compatible with other low level APIs.
 
 There are two options for flashing binaries onto the target MCU, using a USB bootloader or with the ST-LinkV2 programmer. Note that the bootloader has to be flashed to the MCU at least one with the ST-LinkV2 programmer before it can be used.
 
