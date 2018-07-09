@@ -1,5 +1,4 @@
-
-@section intro_sec Introduction
+# Introduction
 
 This library contains low level modules designed to interface with STM32F103 perihperals.
 Modules are designed to be compatible with other low level APIs.
@@ -8,9 +7,9 @@ There are two options for flashing binaries onto the target MCU, using a USB boo
 
 Development has been tested on Ubuntu 16.04LTS
 
-@section install_sec Installation
+# Installation
 
-@subsection Toolchain
+## Toolchain
 
 The GNU arm embedded toolchain https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads is used to develop this library. It can be installed with
 
@@ -31,7 +30,7 @@ Which should print something like this (or newer)
 gcc version 4.9.3 (prerelease) (15:4.9.3+svn231177-1) 
 ```
 
-@subsection Debugger
+## Debugger
 
 Open OCD http://openocd.org/ is used to flash binaries to the target and debug.
 
@@ -56,7 +55,7 @@ Licensed under GNU GPL v2
 For bug reports, read
     http://openocd.org/doc/doxygen/bugs.html
 ```
-@subsection STLINKV2
+## STLINKV2
 
 STLINK V2 http://www.st.com/en/development-tools/st-link-v2.html provides a hardware interface between the PC and MCU.
 
@@ -83,7 +82,7 @@ The list should include
 BUS xxx Device XXX: ID 0483:3748 STMicroelectronics ST-LINK/V2
 ```
 
-@subsection DFU Programmer
+## DFU Programmer
 
 A DFU (device firmware update) programmer is used to communicate with the USB bootloader on the device.
 
@@ -108,7 +107,7 @@ Reload the rules:
 sudo udevadm control --reload-rules
 ```
 
-@subsection Dialout
+## Dialout
 
 The user needs to be a member of group "dialout" to access the tty ports. This can be done with
 
@@ -116,11 +115,11 @@ The user needs to be a member of group "dialout" to access the tty ports. This c
 sudo adduser $USER dialout
 ```
 
-@section Usage
+# Usage
 
 This assumes a complete copy of glob_lib is available locally. All directory paths are relative to the root glob_lib folder.
 
-@subsection Configuration - STLINK
+## Configuration - STLINK
 
 1. Copy the project template folder MCU/stm32f1x3c8/stlink_template to the new location for the project.
 2. Open Makefile
@@ -129,7 +128,7 @@ This assumes a complete copy of glob_lib is available locally. All directory pat
 
 Done
 
-@subsection Configuration - USB Bootloader
+## Configuration - USB Bootloader
 
 If not already flashed on to the MCU, the bootloader needs to loaded first. This only has to be done once.
 
@@ -150,11 +149,11 @@ For a new project
   1. Change PROJECT name blink to the name of the new project.
   2. Ensure GLOB_LIB is the path to the root director for glob_lib
 
-@bug The first time the bootloader is used to flash a program, the power to the MCU needs to be cycled.
+Note: The first time the bootloader is used to flash a program, the power to the MCU needs to be cycled.
 
 Done
 
-@subsection Compiling
+## Compiling
 
 All source files for the project should be contained in directory src.
 
@@ -166,4 +165,4 @@ From the source directory the following commands can be issued.
 - **Make erase** Erase entire MCU flash rom. Erases program and bootloader!!
 - **Make doc** Display this documentation
 - **Make usbReset** Reset the USB ports.
-*/
+
