@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if !(lsusb | grep -q "STM Device in DFU")
+then
+    #Don't need to run this if no USB is present
+    exit
+fi
+
+#Get the USB bus and device
+BUSDEV=$(lsusb | grep "STM Device in DFU" | cut -f1 -d ":")
+
+#Stip all the garbage so just port name and number are left
+BUS="${BUSDEV#* }"
+BUS="${BUS%% *}"
+DEV="${BUSDEV##* }"
+
+#This program requires root, reset the found USB device
+(sudo $1/lib/stm32f1x3/usb_reset  "/dev/bus/usb/$BUS/$DEV")
+
