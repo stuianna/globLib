@@ -1,0 +1,4 @@
+<map id="printc_u8" name="printc_u8">
+<area shape="rect" id="node2" href="$a00073.html#gaa6ddc16b1e45cd43b5dad4ae55a313ac" title="Send a unsigned byte to the output stream. Implemented internally. " alt="" coords="128,5,196,32"/>
+<area shape="rect" id="node3" href="$a00073.html#ga62be7309beaf7ee453731af436999302" title="Send a character to the output stream. Implemented internally. " alt="" coords="131,56,193,83"/>
+</map>

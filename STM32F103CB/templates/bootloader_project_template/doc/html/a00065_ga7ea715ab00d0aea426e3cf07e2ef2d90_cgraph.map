@@ -1,0 +1,5 @@
+<map id="TIMER_setupIC" name="TIMER_setupIC">
+<area shape="rect" id="node2" href="$a00065.html#gafa1edd534d18507fb4df3ee3c7b5d644" title="Set the ISR target for timeout. " alt="" coords="171,31,303,57"/>
+<area shape="rect" id="node3" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="351,5,504,32"/>
+<area shape="rect" id="node4" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="371,68,484,95"/>
+</map>

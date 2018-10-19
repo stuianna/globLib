@@ -1,0 +1,6 @@
+<map id="COMOUT_con128" name="COMOUT_con128">
+<area shape="rect" id="node2" href="$a00070.html#ga23123cbd9d3e04f0190c8da9b2cff06d" title="Initializes the FIFO8 buffer. " alt="" coords="218,5,301,32"/>
+<area shape="rect" id="node3" href="$a00073.html#ga9408b094827c7b00641d85835212d9a9" title="Set the target output stream for print functions. " alt="" coords="184,56,335,83"/>
+<area shape="rect" id="node4" href="$a00070.html#ga7f68f22aa4593380b34c30b430ec2bf3" title="Takes a character from the buffer. " alt="" coords="383,132,467,159"/>
+<area shape="rect" id="node5" href="$a00070.html#ga53f4a927b865e11f2811adc53a79982c" title="Adds a character to the buffer. " alt="" coords="217,157,301,184"/>
+</map>

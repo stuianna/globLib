@@ -1,0 +1,6 @@
+<map id="SPI_setSpeed" name="SPI_setSpeed">
+<area shape="rect" id="node2" href="$a00054.html#ga3199fc3077a8e5f69aaaea0e45c28927" title="Get the current clock speed of the device. " alt="" coords="186,5,317,32"/>
+<area shape="rect" id="node3" href="$a00054.html#gaf12abfeca106287d2675cc66e280475e" title="Get the current clock speed of the alternate bus. " alt="" coords="160,56,343,83"/>
+<area shape="rect" id="node4" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="175,107,328,133"/>
+<area shape="rect" id="node5" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="195,157,308,184"/>
+</map>

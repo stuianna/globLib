@@ -1,0 +1,11 @@
+<map id="MPU6050_calc" name="MPU6050_calc">
+<area shape="rect" id="node2" href="$a00072.html#gaf4b628601258f6e88e2c27f5c5985955" title="Read a half word from a given address. " alt="" coords="164,132,300,159"/>
+<area shape="rect" id="node3" href="$a00059.html#ga158f24656dab1fcb56b510599ab2635a" title="Generate a start condition on the bus. " alt="" coords="369,5,445,32"/>
+<area shape="rect" id="node6" href="$a00059.html#ga2a467e965d791ec6a664ea8189c998ef" title="Send a seven bit address on the bus. " alt="" coords="359,56,455,83"/>
+<area shape="rect" id="node7" href="$a00059.html#ga74a87cc9aa42a9956b23f3dc6e67ca99" title="Send one byte on the bus. " alt="" coords="367,107,446,133"/>
+<area shape="rect" id="node8" href="$a00059.html#gae61004c730257f5408dcbf6b070f0cc3" title="Read one byte from the bus with acknowledge generation. " alt="" coords="348,157,465,184"/>
+<area shape="rect" id="node9" href="$a00059.html#ga3d9ce19098f67573ce7aae875f3cbe6f" title="Generate a stop condition on the bus. " alt="" coords="369,208,444,235"/>
+<area shape="rect" id="node10" href="$a00059.html#ga33dc6872d518f7a5d7e3f44f629e6676" title="Read one byte from the bus without acknowledge generation. " alt="" coords="369,259,444,285"/>
+<area shape="rect" id="node4" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="513,107,667,133"/>
+<area shape="rect" id="node5" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="533,157,647,184"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="RTC_setup" name="RTC_setup">
+<area shape="rect" id="node2" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="321,5,475,32"/>
+<area shape="rect" id="node3" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="341,81,455,108"/>
+<area shape="rect" id="node4" href="$a00062.html#gab407ae2b3e303d16092fb89b1735e1a8" title="Enable the RTC clock. " alt="" coords="144,81,272,108"/>
+<area shape="rect" id="node5" href="$a00062.html#ga0b74feb0d01a5943a6928824d71f5a6d" title="Set the raw prescaler value of the RTC. " alt="" coords="143,31,273,57"/>
+</map>

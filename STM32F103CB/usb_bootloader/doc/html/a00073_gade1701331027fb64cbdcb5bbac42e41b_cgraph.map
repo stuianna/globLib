@@ -1,0 +1,5 @@
+<map id="printc_16" name="printc_16">
+<area shape="rect" id="node2" href="$a00073.html#gab08884efcd0f034fbbabbdd477b9870d" title="Send a signed short to the output stream. Implemented internally. " alt="" coords="128,5,196,32"/>
+<area shape="rect" id="node4" href="$a00073.html#ga62be7309beaf7ee453731af436999302" title="Send a character to the output stream. Implemented internally. " alt="" coords="131,56,193,83"/>
+<area shape="rect" id="node3" href="$a00073.html#gaa2e7ee945c21d824ad6fc02c245d4695" title="Send a unsigned short to the output stream. Implemented internally. " alt="" coords="244,5,319,32"/>
+</map>

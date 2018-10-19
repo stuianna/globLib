@@ -1,0 +1,5 @@
+<map id="LSM9DS1_getMag" name="LSM9DS1_getMag">
+<area shape="rect" id="node2" href="$a00063.html#ga0ec65d648c56bee69f64047b4b9eaae8" title="Read multiple data frames from the slave device using standard protocole. " alt="" coords="185,31,304,57"/>
+<area shape="rect" id="node3" href="$a00058.html#ga31cf286257cb725f26d7d2f6bd43808d" title="Set a given gpio pin on a port to logic low. " alt="" coords="354,5,417,32"/>
+<area shape="rect" id="node4" href="$a00058.html#ga60dbd36de5e47d617e8ce61e473ac2bc" title="Set a given gpio pin on a port to logic high. " alt="" coords="352,56,419,83"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="TIMER_setFrequency" name="TIMER_setFrequency">
+<area shape="rect" id="node2" href="$a00065.html#gaf92f9f10d48017bdd5d0e651f95083f5" title="Set the period for the timer. (in microseconds) " alt="" coords="204,56,331,83"/>
+<area shape="rect" id="node4" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="379,5,532,32"/>
+<area shape="rect" id="node5" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="399,107,512,133"/>
+<area shape="rect" id="node3" href="$a00054.html#ga3199fc3077a8e5f69aaaea0e45c28927" title="Get the current clock speed of the device. " alt="" coords="390,56,521,83"/>
+</map>

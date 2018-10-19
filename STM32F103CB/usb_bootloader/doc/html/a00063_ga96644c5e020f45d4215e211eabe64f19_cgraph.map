@@ -1,0 +1,4 @@
+<map id="SPI_repeatWrite" name="SPI_repeatWrite">
+<area shape="rect" id="node2" href="$a00058.html#ga31cf286257cb725f26d7d2f6bd43808d" title="Set a given gpio pin on a port to logic low. " alt="" coords="174,5,237,32"/>
+<area shape="rect" id="node3" href="$a00058.html#ga60dbd36de5e47d617e8ce61e473ac2bc" title="Set a given gpio pin on a port to logic high. " alt="" coords="172,56,239,83"/>
+</map>

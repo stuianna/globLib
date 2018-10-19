@@ -1,0 +1,12 @@
+<map id="SPI_setup" name="SPI_setup">
+<area shape="rect" id="node2" href="$a00058.html#ga01f517598d7596a7facf50a44615e56e" title="Setup a GPIO pin for a given function. " alt="" coords="173,39,246,66"/>
+<area shape="rect" id="node3" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="345,140,499,167"/>
+<area shape="rect" id="node4" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="365,191,479,218"/>
+<area shape="rect" id="node5" href="$a00063.html#ga97b8cdf965bcb0f26fa9684269ece882" title="Sets the speed of the serial clock. " alt="" coords="156,343,263,370"/>
+<area shape="rect" id="node8" href="$a00063.html#ga31e38479de7450bfaccd899ed6d982f6" title="Sets the polarity of the clock during the idle state. " alt="" coords="136,90,283,116"/>
+<area shape="rect" id="node9" href="$a00063.html#ga00081018e423dd1f5bd24dd156484901" title="Sets the phase of the clock. " alt="" coords="156,140,263,167"/>
+<area shape="rect" id="node10" href="$a00063.html#ga597cbb28eebc6ff9cf27040e23f7a757" title="Sets the size of the data frame for one transmission. " alt="" coords="142,191,277,218"/>
+<area shape="rect" id="node11" href="$a00063.html#ga91a2994d8a6778b0b430e5e6e834ebd4" title="Sets order of the transmitted data frame. " alt="" coords="155,242,264,268"/>
+<area shape="rect" id="node6" href="$a00054.html#ga3199fc3077a8e5f69aaaea0e45c28927" title="Get the current clock speed of the device. " alt="" coords="357,318,487,344"/>
+<area shape="rect" id="node7" href="$a00054.html#gaf12abfeca106287d2675cc66e280475e" title="Get the current clock speed of the alternate bus. " alt="" coords="331,368,513,395"/>
+</map>

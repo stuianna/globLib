@@ -1,0 +1,9 @@
+<map id="TIMER_getIC" name="TIMER_getIC">
+<area shape="rect" id="node2" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="331,82,484,109"/>
+<area shape="rect" id="node3" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="351,133,464,160"/>
+<area shape="rect" id="node4" href="$a00058.html#ga01f517598d7596a7facf50a44615e56e" title="Setup a GPIO pin for a given function. " alt="" coords="183,32,256,58"/>
+<area shape="rect" id="node5" href="$a00065.html#gaf92f9f10d48017bdd5d0e651f95083f5" title="Set the period for the timer. (in microseconds) " alt="" coords="156,184,283,210"/>
+<area shape="rect" id="node7" href="$a00065.html#gae74c59768daded4fb2c42ffc74020ce6" title="Set the duty cycle for the waveform (PWM only, 0 &#45; 100%). " alt="" coords="161,82,278,109"/>
+<area shape="rect" id="node8" href="$a00065.html#ga5f11a3aa331a18263ca097048a25e4d2" title="Set the pulse width for the output. (in microseconds) " alt="" coords="158,133,281,160"/>
+<area shape="rect" id="node6" href="$a00054.html#ga3199fc3077a8e5f69aaaea0e45c28927" title="Get the current clock speed of the device. " alt="" coords="342,184,473,210"/>
+</map>

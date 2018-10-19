@@ -1,0 +1,10 @@
+<map id="MPU6050_getGyr" name="MPU6050_getGyr">
+<area shape="rect" id="node2" href="$a00072.html#ga06c71201c4e53eeb9e7af55501757084" title="Read a single byte from a given address. " alt="" coords="180,107,319,133"/>
+<area shape="rect" id="node3" href="$a00059.html#ga158f24656dab1fcb56b510599ab2635a" title="Generate a start condition on the bus. " alt="" coords="377,56,453,83"/>
+<area shape="rect" id="node6" href="$a00059.html#ga2a467e965d791ec6a664ea8189c998ef" title="Send a seven bit address on the bus. " alt="" coords="367,107,463,133"/>
+<area shape="rect" id="node7" href="$a00059.html#ga74a87cc9aa42a9956b23f3dc6e67ca99" title="Send one byte on the bus. " alt="" coords="375,157,454,184"/>
+<area shape="rect" id="node8" href="$a00059.html#ga3d9ce19098f67573ce7aae875f3cbe6f" title="Generate a stop condition on the bus. " alt="" coords="377,208,452,235"/>
+<area shape="rect" id="node9" href="$a00059.html#ga33dc6872d518f7a5d7e3f44f629e6676" title="Read one byte from the bus without acknowledge generation. " alt="" coords="377,5,452,32"/>
+<area shape="rect" id="node4" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="511,81,664,108"/>
+<area shape="rect" id="node5" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="531,132,644,159"/>
+</map>

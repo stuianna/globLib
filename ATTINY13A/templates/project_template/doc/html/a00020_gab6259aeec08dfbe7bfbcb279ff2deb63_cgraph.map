@@ -1,0 +1,4 @@
+<map id="pinRead" name="pinRead">
+<area shape="rect" id="node2" href="$a00020.html#ga5dd4fc84282bb9c7f13bf17e9fac8856" title="Setup interrupts on a gpio port / pin. " alt="" coords="126,5,251,32"/>
+<area shape="rect" id="node3" href="$a00020.html#gae7f2ba10b8ec63eac27e96795b0aa672" title="Disable interrupts on a gpio port / pin. " alt="" coords="124,56,253,83"/>
+</map>

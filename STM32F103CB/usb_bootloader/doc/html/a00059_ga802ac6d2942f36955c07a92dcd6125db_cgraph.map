@@ -1,0 +1,5 @@
+<map id="I2C_setup" name="I2C_setup">
+<area shape="rect" id="node2" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="257,5,411,32"/>
+<area shape="rect" id="node3" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="277,68,391,95"/>
+<area shape="rect" id="node4" href="$a00058.html#ga01f517598d7596a7facf50a44615e56e" title="Setup a GPIO pin for a given function. " alt="" coords="136,31,209,57"/>
+</map>
