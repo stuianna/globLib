@@ -7,7 +7,7 @@ GPIO_ISR = -DGPIO_ISR 	#Interrupts for GPIO
 CFLAGS = -std=gnu11 -Wall -ffunction-sections -fdata-sections -Os -fshort-enums -flto 
 LFLAGS = --gc-sections,--flto #Linker arguments should be comma separated
 
-GLOB_LIB= /home/stuart/Dropbox/git/globLib
+GLOB_LIB= 
 
 ### 
 #Shouldn't need to change from here down
