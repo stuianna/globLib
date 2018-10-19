@@ -1,10 +1,11 @@
-# Documentation
+#Documentation
 
-This directory contains any documentation related to the project. The bulk of this
-documentation is generated using Doxygen. It can be accessed with the link "linkDoc.html"
-or alternativly at doxygen/html/index.html. 
+This directory contains the main Doxygen generated documentation for the globLib project. 
+The documentation covers the common library and each microcontroller module available.
 
-This repository needs to be stored on the local machine to view the Doxygen documentation.
+The repository needs to be stored on the local machine to view the Doxygen documentation.
+The documentation can be opened at Doxygen/html/index.html or with the make recipe 
+**make libdoc** in any project template folder.
 
 ## Recompiling the Documentation
 
@@ -12,16 +13,9 @@ Recompiling the documentation requires a local version of Doxygen. This can be o
 https://www.stack.nl/~dimitri/doxygen/manual/install.html or possibly using the package
 manager 
 
-```
-sudo apt-get install doxygen
-```
-
-To recompile the documentation, navigate to doxygen and run
-
-```
-doxygen doxy
-```
+The documentation for the entire project can be build by running **make** from this directory,
+or removed with **make clean**
 
 ## Datasheets
 
-Any relevant datasheets should be contained in this folder.
+Any relevant datasheets should be contained in the doc folder for the respective hardware. 

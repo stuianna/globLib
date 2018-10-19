@@ -47,8 +47,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="../../../common/doc/doxygen/html/index.html"><span>Common</span></a></li>
+      <li><a href="../../../ATTINY13A/doc/doxygen/html/index.html"><span>ATTINY13A</span></a></li>
+      <li><a href="../../../STM32F103CB/doc/doxygen/html/index.html"><span>STM32F103CB</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -101,40 +102,65 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">Introduction </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>GlobLib is combination of a hardware abstraction layer and common libraries which can be shared across multiple microcontroller units (MCU). It is designed to provide boilerplate, cross-MCU compatible code implementation of the most commonly used features. A typical library contains implementations for:</p><ul>
-<li>GPIO</li>
-<li>USART</li>
-<li>SPI</li>
-<li>I2C</li>
-<li>ADC</li>
-<li>Timers - PWM / Input capture / Pulse width</li>
-<li>Interrupts</li>
-<li>Systick</li>
-<li>RTC</li>
-<li>Watchdog</li>
-<li>Clock configuration</li>
-<li>USB</li>
-<li>Flash memory / EEPROM</li>
-<li>Power modes</li>
-</ul>
-<p>GlobLib focuses on proving functionality and portability for the most common features of each peripheral. It is not necessarily the fastest or best way of implementing any specific feature.</p>
-<p>This collection also contains common libraries which can be used across different MCUs.</p>
+<div class="textblock"><p>GlobLib is combination of a hardware abstraction layer and common libraries which can be shared across multiple microcontroller units (MCU). It is designed to provide boilerplate, cross-MCU compatible code implementation of the most commonly used features. This project was created to both support code reuseability and as an education exercise in multi-architecture firmware develop for myself.</p>
+<p>GlobLib focuses on proving functionality and portability for the most common features of each peripheral.</p>
 <h1>Supported Hardware</h1>
 <h3>MCU</h3>
-<ul>
-<li>STM32F103 (full)</li>
-</ul>
+<table class="doxtable">
+<tr>
+<th>MCU </th><th align="center">STM32F103CB </th><th align="center">ATTINY13A  </th></tr>
+<tr>
+<td>GPIO </td><td align="center">Full </td><td align="center">Full </td></tr>
+<tr>
+<td>USART </td><td align="center">Full </td><td align="center">Pending </td></tr>
+<tr>
+<td>SPI </td><td align="center">Full </td><td align="center">Pending </td></tr>
+<tr>
+<td>I2C </td><td align="center">Full </td><td align="center">Pending </td></tr>
+<tr>
+<td>CAN </td><td align="center">Pending </td><td align="center">n/a </td></tr>
+<tr>
+<td>ETHERNET </td><td align="center">n/a </td><td align="center">n/a </td></tr>
+<tr>
+<td>USB </td><td align="center">Full </td><td align="center">n/a </td></tr>
+<tr>
+<td>ADC </td><td align="center">Full </td><td align="center">Pending </td></tr>
+<tr>
+<td>DMA </td><td align="center">Pending </td><td align="center">n/a </td></tr>
+<tr>
+<td>TIMERS </td><td align="center">Full </td><td align="center">Pending </td></tr>
+<tr>
+<td>SYSTICK </td><td align="center">Full </td><td align="center">n/a </td></tr>
+<tr>
+<td>RTC </td><td align="center">Full </td><td align="center">n/a </td></tr>
+<tr>
+<td>WATCHDOG </td><td align="center">Full </td><td align="center">Pending </td></tr>
+<tr>
+<td>CLOCK CONFIG </td><td align="center">Full </td><td align="center">Full </td></tr>
+<tr>
+<td>POWER MODES </td><td align="center">Full </td><td align="center">Pending </td></tr>
+<tr>
+<td>EEPROM </td><td align="center">Full </td><td align="center">Pending </td></tr>
+<tr>
+<td>BOOTLOADER </td><td align="center">Yes (USB) </td><td align="center">n/a </td></tr>
+</table>
 <h3>IMU</h3>
 <ul>
-<li><a class="el" href="structMPU6050.html" title="Data structure containing variables specific to individual slave devices. ">MPU6050</a></li>
-<li><a class="el" href="structLSM9DS1.html" title="Data structure containing variables specific to individual slave devices. ">LSM9DS1</a> (SPI interface only)</li>
+<li>MPU6050</li>
+<li>LSM9DS1 (SPI interface only)</li>
 </ul>
+<h2>Software Modules</h2>
+<p>Additional software modules are included in COMMON with complete Doxygen generated documentation.</p>
 <h1>Documentation</h1>
-<p>Doxygen <a href="http://www.stack.nl/~dimitri/doxygen/index.html">http://www.stack.nl/~dimitri/doxygen/index.html</a> is used to automatically generate extensive documentation of this collection and its features. This document can be accessed in doc/libDoc.html. A local copy of this repository needs to made before this documentation can be accessed.</p>
+<p><a href="http://www.stack.nl/~dimitri/doxygen/index.html">Doxygen</a> is used to automatically generate extensive documentation of this collection and its features. This document can be accessed in doc/doxygen/html/index.html or by typing <b>make libdoc</b> from any of the project templates. A local copy of this repository needs to made before this documentation can be accessed.</p>
 <h1>Installation / Usage</h1>
 <p>This whole repository should be cloned onto a local machine to function correctly.</p>
-<p>Each supported MCU has a root directory containing a project template and specific instructions for its usage. These are located in MCU/.</p>
-<p>Example applications for different features are located in lib/examples, these are also included in the Doxygen documentation. </p>
+<ol type="1">
+<li>Clone this repository onto the local machine</li>
+<li>Run <code>chmod +x config.sh</code> to make the configuration file executable</li>
+<li>Execute the config file with <code>./config.sh</code>. This script sets the glob_lib variable in each Makefile to the current root directory. This should also be run if the main glob_lib folder is moved.</li>
+</ol>
+<p>Each supported MCU has a templates containing a project template and specific instructions for its usage. These are located in under each MCU name. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
