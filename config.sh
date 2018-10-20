@@ -1,5 +1,7 @@
 #! /bin/bash
 
+#This script sets the glob_lib variable in each makefile to the current working directory.
+
 CURDIR=$(pwd)
 PREFIX='GLOB_LIB='
 GLOBPATH="$PREFIX $CURDIR"
