@@ -2,7 +2,7 @@
     @file attiny13a_gpio.c
     @brief Source file for attiny13a GPIO 
     @author Stuart Ianna
-    @version 0.1
+    @version 0.11
     @date October 2018
     @copyright GNU GPLv3
     @warning None
@@ -27,7 +27,7 @@ mcu_error pinSetup(gpio_mode mode, gpio_port port, gpio_pin pin){
 
         case GPIO_DO:
             
-            DDRB = 1<<pin;
+            DDRB |= 1<<pin;
             break;
 
         case GPIO_DI:
@@ -60,11 +60,11 @@ void pinWrite(gpio_port port, gpio_pin pin, gpio_state state)
 {
     if(state)
     {
-        pinLow(port,pin);
+        pinHigh(port,pin);
     }
     else
     {
-        pinHigh(port,pin);
+        pinLow(port,pin);
     }
 }
 
@@ -77,7 +77,7 @@ void pinToggle(gpio_port port, gpio_pin pin){
 //Read the input state of a port's pin.
 uint8_t pinRead(gpio_port port, gpio_pin pin){
 
-    return (*(uint8_t*)PORTB & (1<<pin)) >> pin;
+    return PINB & (1<<pin) ;
 }
 
 #ifdef GPIO_ISR 
@@ -86,6 +86,7 @@ uint8_t pinRead(gpio_port port, gpio_pin pin){
 mcu_error GPIO_ISREnable(const gpio_port port, const gpio_pin pin, const gpio_isr trigger, void (*handle)(void)){
 
     cli();
+    pinSetup(GPIO_DI,port,pin);
     PCMSK |= (1<<pin);
     GIMSK |= 1<<PCIE;
     isr_handler = handle;
