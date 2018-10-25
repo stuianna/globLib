@@ -34,6 +34,7 @@
 #include "attiny13a_gpio.h"
 #include "attiny13a_debug.h"
 #include "attiny13a_clock.h"
+#include "attiny13a_timer.h"
 
 /*! 
     @brief Millisecond blocking delay.

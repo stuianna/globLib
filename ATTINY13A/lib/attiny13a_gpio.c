@@ -101,12 +101,14 @@ mcu_error GPIO_ISREnable(const gpio_port port, const gpio_pin pin, const gpio_is
             
         case GPIO_FALLING:
 
+            MCUCR &= ~(1<<ISC00);
             MCUCR |= 1<<ISC01;
             break;
 
         case GPIO_BOTH:
 
             MCUCR |= 1<<ISC00;
+            MCUCR &= ~(1<<ISC01);
             break;
 
         case GPIO_LEVEL_LOW:

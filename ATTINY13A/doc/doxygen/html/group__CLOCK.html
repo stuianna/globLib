@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('group__CLOCK.html','');});
 <div class="header">
   <div class="summary">
 <a href="#files">Files</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">CLOCK<div class="ingroups"><a class="el" href="group__ATTINY13A.html">ATTINY13A</a></div></div>  </div>
@@ -117,14 +117,23 @@ Files</h2></td></tr>
 <tr class="memdesc:attiny13a__clock_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header file for attiny13a CLOCK. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga1d7518f2f06463bee4f910c9327b7f1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1d7518f2f06463bee4f910c9327b7f1a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CLOCK.html#ga1d7518f2f06463bee4f910c9327b7f1a">CLOCK_BASE</a>&#160;&#160;&#160;9.6e6</td></tr>
+<tr class="memdesc:ga1d7518f2f06463bee4f910c9327b7f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum clock speed for internal RC oscillator. <br /></td></tr>
+<tr class="separator:ga1d7518f2f06463bee4f910c9327b7f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66aabcb5c2ddfee18945dc7374d8a7d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga66aabcb5c2ddfee18945dc7374d8a7d7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CLOCK.html#ga66aabcb5c2ddfee18945dc7374d8a7d7">CLOCK_DIV_64</a>&#160;&#160;&#160;F_CPU/64</td></tr>
+<tr class="memdesc:ga66aabcb5c2ddfee18945dc7374d8a7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock speed divided by 64. <br /></td></tr>
+<tr class="separator:ga66aabcb5c2ddfee18945dc7374d8a7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf07736e255f32c95128dab90b97cd407"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf07736e255f32c95128dab90b97cd407"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CLOCK.html#gaf07736e255f32c95128dab90b97cd407">CLOCK_DIV_1024</a>&#160;&#160;&#160;F_CPU/1024</td></tr>
+<tr class="memdesc:gaf07736e255f32c95128dab90b97cd407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock speed divided by 1024. <br /></td></tr>
+<tr class="separator:gaf07736e255f32c95128dab90b97cd407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga1c0fb75e4c7de12f534ad46014d35611"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DEBUG.html#ga90d6d08ec193c9751b20ce1d143b7f3c">mcu_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CLOCK.html#ga1c0fb75e4c7de12f534ad46014d35611">CLOCK_setSpeed</a> (<a class="el" href="group__CLOCK.html#ga40243a242aa3fc9a23d8555457058312">clock_option</a> option)</td></tr>
-<tr class="memdesc:ga1c0fb75e4c7de12f534ad46014d35611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the final clock speed of the device.  <a href="#ga1c0fb75e4c7de12f534ad46014d35611">More...</a><br /></td></tr>
-<tr class="separator:ga1c0fb75e4c7de12f534ad46014d35611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3199fc3077a8e5f69aaaea0e45c28927"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CLOCK.html#ga3199fc3077a8e5f69aaaea0e45c28927">CLOCK_getSpeed</a> (void)</td></tr>
 <tr class="memdesc:ga3199fc3077a8e5f69aaaea0e45c28927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current clock speed of the device.  <a href="#ga3199fc3077a8e5f69aaaea0e45c28927">More...</a><br /></td></tr>
 <tr class="separator:ga3199fc3077a8e5f69aaaea0e45c28927"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,59 +143,29 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This module contains low level functions modifying clock parameters. </p>
-<p>The ATTINY13A has a maximum clock speed of 9.6MHz for the internal RC oscillator. By default, on startup, the clock is set to internal oscillator with 9.6MHz frequency.</p>
-<dl class="section note"><dt>Note</dt><dd>Clock switching needs to be done before any extra peripheral clocks are used!</dd></dl>
+<p>There are four options for clock speeds on the ATTiny13A using the internal RC oscillator. This speed is set by CLOCK parameter in the ** Makefile **. Although it is possible to adjust the clock speed using software. This module doesn't include this function.</p>
+<p>The four available clock speeds are</p><ul>
+<li>9600000 (9.6MHz)</li>
+<li>4800000 (4.8MHz)</li>
+<li>1200000 (1.2MHz)</li>
+<li>600000 (0.6MHz)</li>
+</ul>
+<p>Note that lower clock speeds result in lower power consumption.</p>
+<p>Clock speeds have effects on the following modules:</p><ul>
+<li>TIMERS</li>
+</ul>
+<p>Their documentation details the effects.</p>
 <dl class="section author"><dt>Author</dt><dd>Stuart Ianna </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>October 2018 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>GNU GPLv3 </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>None </dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug:</a></b></dt><dd>Switching between all clock options doesn't work well.<ul>
-<li>Switch from internal ocsillator 64Mhz to a lower speed doesn't work</li>
-</ul>
-</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Add option for setting clock back to default option.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Clock speed needs to be set in the Makefile. </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug:</a></b></dt><dd></dd></dl>
 <dl class="section user"><dt>Compilers</dt><dd><ul>
 <li>avr-gcc 4.9.2</li>
 </ul>
 </dd></dl>
-<dl class="section user"><dt>Example Usage</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stm32f103cb_core.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;coms128.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;mpu6050.h&gt;</span></div><div class="line"></div><div class="line"><span class="comment">//Create a data structure for the device</span></div><div class="line">MPU6050 mpu;</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line"></div><div class="line">    <span class="comment">//This should be done before other peripherals are set up</span></div><div class="line">    <a class="code" href="group__CLOCK.html#ga1c0fb75e4c7de12f534ad46014d35611">CLOCK_setSpeed</a>(CLOCK_EX_8_OUT_72);</div><div class="line"></div><div class="line">    <span class="comment">//Serial communications</span></div><div class="line">    USART_setup(USART_1);</div><div class="line">    COMS(USART_1);</div><div class="line"></div><div class="line">    <span class="comment">//Print out clock freuqency</span></div><div class="line">    prints(<span class="stringliteral">&quot;Clock speed =&quot;</span>);</div><div class="line">    printl(<a class="code" href="group__CLOCK.html#ga3199fc3077a8e5f69aaaea0e45c28927">CLOCK_getSpeed</a>());</div><div class="line"></div><div class="line">    <span class="comment">//Done</span></div><div class="line">    <span class="keywordflow">while</span> (1);</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </dd></dl>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga40243a242aa3fc9a23d8555457058312"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__CLOCK.html#ga40243a242aa3fc9a23d8555457058312">clock_option</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clock configuration available for MCU. </p>
-<p>In theory the clock speed can be reduced further by increaing the division of the CLKPR register (see source code). Although with the USBASP, frequencies lower than 600kHz will case the programmer to no longer be able to comunicate with the MCU and no more firmware can be uploaded.</p>
-<p>Should the MCU become locked under these conditions, the device can be powered on with the reset pin held low, causing no application code to run. The device can then be flashed with a higher clock speed to be unlocked. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga40243a242aa3fc9a23d8555457058312ac83f1e2e369ff060c66b518828798f2d"></a>CLOCK_IN_9_6M&#160;</td><td class="fielddoc">
-<p>Internal oscillator, divided to 9.6MHz final. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga40243a242aa3fc9a23d8555457058312aae66432d2aa7eff3a99013b785781c9c"></a>CLOCK_IN_4_8M&#160;</td><td class="fielddoc">
-<p>Internal oscillator, divided to 4.8MHz final. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga40243a242aa3fc9a23d8555457058312a6b89bb11fc5f9962e35a4f9bf996d7a9"></a>CLOCK_IN_2_4M&#160;</td><td class="fielddoc">
-<p>Internal oscillator, divided to 2.4MHz final. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga40243a242aa3fc9a23d8555457058312a82dd2db4e9216b7df71085a268474889"></a>CLOCK_IN_1_2M&#160;</td><td class="fielddoc">
-<p>Internal oscillator, divided to 1.2MHz final. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga40243a242aa3fc9a23d8555457058312ac2a739bbcbab27095cb131e3eb5890ea"></a>CLOCK_IN_600K&#160;</td><td class="fielddoc">
-<p>Internal oscillator, divided to 600kHz final. </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="attiny13a__clock_8h_source.html#l00060">60</a> of file <a class="el" href="attiny13a__clock_8h_source.html">attiny13a_clock.h</a>.</p>
-
-</div>
-</div>
+<dl class="section user"><dt>Example Usage</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stm32f103cb_core.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;coms128.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;mpu6050.h&gt;</span></div><div class="line"></div><div class="line"><span class="comment">//Create a data structure for the device</span></div><div class="line">MPU6050 mpu;</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line"></div><div class="line">    <span class="comment">//This should be done before other peripherals are set up</span></div><div class="line">    CLOCK_setSpeed(CLOCK_EX_8_OUT_72);</div><div class="line"></div><div class="line">    <span class="comment">//Serial communications</span></div><div class="line">    USART_setup(USART_1);</div><div class="line">    COMS(USART_1);</div><div class="line"></div><div class="line">    <span class="comment">//Print out clock freuqency</span></div><div class="line">    prints(<span class="stringliteral">&quot;Clock speed =&quot;</span>);</div><div class="line">    printl(<a class="code" href="group__CLOCK.html#ga3199fc3077a8e5f69aaaea0e45c28927">CLOCK_getSpeed</a>());</div><div class="line"></div><div class="line">    <span class="comment">//Done</span></div><div class="line">    <span class="keywordflow">while</span> (1);</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </dd></dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga3199fc3077a8e5f69aaaea0e45c28927"></a>
 <div class="memitem">
@@ -205,7 +184,7 @@ Functions</h2></td></tr>
 <p>Get the current clock speed of the device. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current speed of the CPU bus in hertz. (Clock frequency) </dd></dl>
 
-<p>Definition at line <a class="el" href="attiny13a__clock_8c_source.html#l00064">64</a> of file <a class="el" href="attiny13a__clock_8c_source.html">attiny13a_clock.c</a>.</p>
+<p>Definition at line <a class="el" href="attiny13a__clock_8c_source.html#l00019">19</a> of file <a class="el" href="attiny13a__clock_8c_source.html">attiny13a_clock.c</a>.</p>
 
 </div>
 </div>
@@ -228,42 +207,13 @@ Functions</h2></td></tr>
 <p>A sample usage of this application is in <a class="el" href="group__CORE.html#ga25f9be571ac3f6bb5a8027a29eb4e629" title="Millisecond blocking delay. ">delayms()</a> of <a class="el" href="attiny13a__core_8h.html" title="Generic header file for all modules. ">attiny13a_core.h</a></p>
 <dl class="section return"><dt>Returns</dt><dd>The current speed of the CPU clock bus.</dd></dl>
 <ul>
-<li>CLOCK_IN_9_6M - Divisor = 0</li>
-<li>CLOCK_IN_4_8M - Divisor = 1</li>
-<li>CLOCK_IN_2_4M - Divisor = 2</li>
-<li>CLOCK_IN_1_2M - Divisor = 3</li>
-<li>CLOCK_IN_600K - Divisor = 4 </li>
+<li>CPU = 9.6MHz - Divisor = 1</li>
+<li>CPU = 4.8MHz - Divisor = 2</li>
+<li>CPU = 1.2MHz - Divisor = 8</li>
+<li>CPU = 0.6MHz - Divisor = 16 </li>
 </ul>
 
-<p>Definition at line <a class="el" href="attiny13a__clock_8c_source.html#l00071">71</a> of file <a class="el" href="attiny13a__clock_8c_source.html">attiny13a_clock.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga1c0fb75e4c7de12f534ad46014d35611"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__DEBUG.html#ga90d6d08ec193c9751b20ce1d143b7f3c">mcu_error</a> CLOCK_setSpeed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__CLOCK.html#ga40243a242aa3fc9a23d8555457058312">clock_option</a>&#160;</td>
-          <td class="paramname"><em>option</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the final clock speed of the device. </p>
-<p>If this function isn't used, the default speed of 9.6MHz will be used.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">option</td><td>The clock speed option to use defined by <a class="el" href="group__CLOCK.html#ga40243a242aa3fc9a23d8555457058312" title="Clock configuration available for MCU. ">clock_option</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Error number as defined in <a class="el" href="group__DEBUG.html#ga90d6d08ec193c9751b20ce1d143b7f3c" title="Error enumerators for the Debug peripheral. ">mcu_error</a>, <a class="el" href="group__DEBUG.html#gga90d6d08ec193c9751b20ce1d143b7f3ca7a502a84e0dec2f0a7d34f13d7f2448e" title="Error clock: Clock speed doesn&#39;t exist. ">E_CLOCK_NOSPEED</a> if clock option doesn't exist. </dd></dl>
-
-<p>Definition at line <a class="el" href="attiny13a__clock_8c_source.html#l00020">20</a> of file <a class="el" href="attiny13a__clock_8c_source.html">attiny13a_clock.c</a>.</p>
+<p>Definition at line <a class="el" href="attiny13a__clock_8c_source.html#l00026">26</a> of file <a class="el" href="attiny13a__clock_8c_source.html">attiny13a_clock.c</a>.</p>
 
 </div>
 </div>

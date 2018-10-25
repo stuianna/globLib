@@ -46,7 +46,7 @@ documentation.
 
 [Doxygen](http://www.stack.nl/~dimitri/doxygen/index.html) is used to automatically
 generate extensive documentation of this collection and its features. This document
-can be accessed through [Github Pages](https://stuianna.github.io/globLib/) or by typing **make libdoc** from any of the project templates. A local copy of this repository needs to made before this documentation can be accessed.
+can be accessed through [Github Pages](https://stuianna.github.io/globLib/doc/doxygen/html/index.html) or by typing **make libdoc** from any of the project templates. A local copy of this repository needs to made before this documentation can be accessed.
 
 # Installation / Usage
 

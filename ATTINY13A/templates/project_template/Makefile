@@ -1,10 +1,20 @@
 #Name of the project
 TARGET = ATTINY13A_project_template
 
-#Uncomment config options to include features
-GPIO_ISR = -DGPIO_ISR 	#Interrupts for GPIO
+#Device target clock speed, options are:
+# 9600000
+# 4800000
+# 1200000
+# 600000
+CLOCK = 9600000
 
-CFLAGS = -std=gnu11 -Wall -ffunction-sections -fdata-sections -Os -fshort-enums -flto 
+#Uncomment config options to include features
+
+#D_GPIO_ISR = -DGPIO_ISR 	#Interrupts for GPIO
+#D_TIMER_ISR = -DTIMER_ISR 	#Interrupts for TIMER
+#D_TIMER_IC = -DTIMER_IC 	#Input Capture for TIMER
+
+CFLAGS = -std=gnu11 -Wall -ffunction-sections -fdata-sections -Os -fshort-enums  -flto
 LFLAGS = --gc-sections,--flto #Linker arguments should be comma separated
 
 GLOB_LIB= 
@@ -21,7 +31,6 @@ LIB_DIR= $(GLOB_LIB)/ATTINY13A/lib
 
 DEVICE      = attiny13a
 AVR_DEVICE = t13
-CLOCK      = 9600000
 PROGRAMMER = -c usbasp
 
 SRCS := $(shell find $(SRC_DIR) -name '*.c')
@@ -32,16 +41,27 @@ INC = -I$(COMMON_DIR)/ -I$(LIB_DIR)/
 # see http://www.engbedded.com/fusecalc/
 # If the clock settings fuse is changed, the ... should be updated so clock timings are correct
 # Current settings:
-# 	9.6MHz clock
-# 	Internally divide clock by 8 (Can be modified by software)	
 # 	Preserve EEPROM through chip erase
 # 	Serial programming enables (MUST BE LIKE THIS)
 # 	Reset pin enabled
 # 	No Brown out detection
 # 	Debug wire disabled
 # 	Self programming disabled
-FUSES = -U lfuse:w:0x3a:m -U hfuse:w:0xff:m
+#
 
+ifeq ($(CLOCK),9600000)
+	FUSES=-U lfuse:w:0x3a:m -U hfuse:w:0xff:m
+else ifeq ($(CLOCK),4800000)
+	FUSES=-U lfuse:w:0x39:m -U hfuse:w:0xff:m
+else ifeq ($(CLOCK),1200000)
+	FUSES=-U lfuse:w:0x2a:m -U hfuse:w:0xff:m
+else ifeq ($(CLOCK),600000)
+	FUSES=-U lfuse:w:0x29:m -U hfuse:w:0xff:m
+else
+	FUSES=-U lfuse:w:0x3a:m -U hfuse:w:0xff:m
+endif
+
+CFLAGS += $(D_GPIO_ISR) $(D_TIMER_ISR) $(D_TIMER_IC)
 AVRDUDE = avrdude $(PROGRAMMER) -p $(AVR_DEVICE) $(FUSES)
 COMPILE = avr-gcc $(CFLAGS) -Wl,$(LFLAGS) -DF_CPU=$(CLOCK) -mmcu=$(DEVICE) 
 

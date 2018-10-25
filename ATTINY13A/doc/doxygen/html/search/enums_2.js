@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mcu_5ferror',['mcu_error',['../group__DEBUG.html#ga90d6d08ec193c9751b20ce1d143b7f3c',1,'attiny13a_debug.h']]]
+  ['timer_5fchannel',['timer_channel',['../group__TIMERS.html#ga59cf27ab194b377006b4dc9086df6328',1,'attiny13a_timer.h']]],
+  ['timer_5fmain',['timer_main',['../group__TIMERS.html#ga90028e095f2a7a5490b5e10109bb18c4',1,'attiny13a_timer.h']]]
 ];

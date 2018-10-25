@@ -2,10 +2,10 @@ var indexSectionsWithContent =
 {
   0: "abcdegimpt",
   1: "a",
-  2: "cdgp",
-  3: "cgm",
-  4: "cegp",
-  5: "acdg",
+  2: "cdgpt",
+  3: "gmt",
+  4: "cegpt",
+  5: "acdgt",
   6: "bit"
 };
 
