@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lsm9ds1',['LSM9DS1',['../group__LSM9DS1.html',1,'']]]
+  ['fifo8',['FIFO8',['../group__FIFO8.html',1,'']]],
+  ['flashwrite',['FlashWrite',['../group__flashWrite.html',1,'']]]
 ];

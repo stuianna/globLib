@@ -7,6 +7,7 @@ var group__String11 =
     [ "printl", "group__String11.html#ga327fc45db81e4959673d04975a4d49d4", null ],
     [ "prints", "group__String11.html#ga727a650e47ac0610f3f8b072e8fd5696", null ],
     [ "printt", "group__String11.html#gad5bdf0ae6e943f32dba14b622571f74f", null ],
+    [ "v_fp_u8", "group__String11.html#gae8eca16345cafaba7c5774b05b77cf8f", null ],
     [ "print_16", "group__String11.html#gab08884efcd0f034fbbabbdd477b9870d", null ],
     [ "print_32", "group__String11.html#ga202d33955ed402bc1b8570b99ce059d2", null ],
     [ "print_8", "group__String11.html#ga7b65a127f71fc5a706c1eeff6314c8c4", null ],
@@ -52,6 +53,9 @@ var group__String11 =
     [ "printt_u16", "group__String11.html#ga22a562d235be152f4e4bd5808f77efa7", null ],
     [ "printt_u32", "group__String11.html#ga353d1b906c73bc095c393bc90e3a3286", null ],
     [ "printt_u8", "group__String11.html#ga4f94f37e49db4b38d878ba9bbd033055", null ],
+    [ "str2float", "group__String11.html#ga5a727149afa6728dbf7083f93c129f5e", null ],
     [ "str2int", "group__String11.html#gaac5ff1fc627bc4145d761466f6eb48b0", null ],
+    [ "str2uint", "group__String11.html#ga565c7011c71f2e1d4a0561ef80042b80", null ],
+    [ "STRING11_getOutput", "group__String11.html#ga4464bf2970970c9f51b9533bd552bc7f", null ],
     [ "STRING11_setOutput", "group__String11.html#ga9408b094827c7b00641d85835212d9a9", null ]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['coms128_2ec',['coms128.c',['../coms128_8c.html',1,'']]],
-  ['coms128_2eh',['coms128.h',['../coms128_8h.html',1,'']]]
+  ['at24c256_2ec',['at24c256.c',['../at24c256_8c.html',1,'']]],
+  ['at24c256_2eh',['at24c256.h',['../at24c256_8h.html',1,'']]]
 ];

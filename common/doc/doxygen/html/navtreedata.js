@@ -12,7 +12,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"../../../../ATTINY13A/doc/doxygen/html/index.html"
+"../../../../ATTINY13A/doc/doxygen/html/index.html",
+"group__flashWrite.html#gade3e1fb98e1d396cc2fb35fbf028c1b9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

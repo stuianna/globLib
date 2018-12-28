@@ -17,27 +17,25 @@
     - **printl()** -> Print the given value plus a new line.
 
     Current limitations
-    - Maximum float size is limiting to uint32 max.
-    - Float decimal places are limited by Macro #MAX_DEC, this could be changeable if implemented in RAM.
+    - Maximum float size is limiting to uint32 max / 10^MAX_DEC.
+    - Float decimal places are limited by Macro #MAX_DEC
     - Optimizations could be done on some functions.
 
     @author Stuart Ianna
-    @version 1.0
-    @date June 2018
+    @version 0.2
+    @date December 2018
     @copyright GNU GPLv3
     @warning None
     @bug None
     @todo 
-    - Add impimentation for datatype to string buffer
-    - Add bit to data conversions
-    - Add data to bit conversions
+        - Optimisations on functions
         
     @par Verified Compilers
     - arm-none-eabi-gcc (15:4.9.3+svn231177-1) 4.9.3 20150529 (prerelease)
 
     @par Example 
 
-    @include example_serial11.c
+    @include example_string11.c
 
  * @{
  */
@@ -50,6 +48,11 @@
 #define STRING11_H
 
 #include <stdio.h>
+
+/*! 
+    @brief Function pointer typedef for void function with uint8_t parameter
+*/
+typedef void(*v_fp_u8)(uint8_t);
 
 /*! 
     @brief Print a given datatype to the output stream.
@@ -137,7 +140,7 @@
 /*! 
     @brief Maximum number of decimal places a float will contain.
 */
-#define MAX_DEC 2
+#define MAX_DEC 4
 
 /*! 
     @brief Convert a null terminated string to an integer.
@@ -147,12 +150,31 @@
 int32_t str2int(char *buffer);
 
 /*! 
+    @brief Convert a null terminated string to an unsigned integer.
+    @param buffer Character array containing the number
+    @return The parsed integer, returns 0 if contained invalid characters.
+*/
+uint32_t str2uint(char *buffer);
+/*! 
+    @brief Convert a null terminated string to a float.
+    @param buffer Character array containing the number
+    @return The parsed integer, returns 0 if contained invalid characters.
+*/
+float str2float(char *buffer);
+
+/*! 
     @brief Set the target output stream for print functions
     @details This function must be called before any print function will work.
     @param out Pointer to the output stream function.
     @return none.
 */
 void STRING11_setOutput(void (*out)(uint8_t));
+
+/*! 
+    @brief Get the current target output stream
+    @return Function pointer to output stream or Null if not defined.
+*/
+v_fp_u8 STRING11_getOutput(void);
 
 /*! 
     @brief Send a character to the output stream. Implemented internally.

@@ -105,4 +105,24 @@ fifo8_error_t FIFO8_flush(FIFO8 *target){
 
     return E_FIFO8_NOERROR;
 }
+uint8_t FIFO8_pop(FIFO8 *target){
+
+    uint8_t byte;
+    //The fifo is empty when the head and tail are at the same position.
+	if(target->head == target->tail){
+
+		target->idle = 1;
+		return E_FIFO8_EMPTY;
+	}
+
+	target->idle = 0;
+
+    //Get a byte and wrap around if need
+	byte = (target->buffer[target->tail]);
+	target->tail++;
+	target->tail = (target->tail & target->mask);
+
+    return byte;
+
+}
 

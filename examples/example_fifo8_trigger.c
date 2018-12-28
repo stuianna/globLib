@@ -2,9 +2,6 @@
 #include <stm32f103cb_core.h>
 #include "fifo8.h"
 
-//Create an instance for the USART object -> required for demo
-USART serial;
-
 //Create an instance for the FIFO object
 FIFO8 rx;
 
@@ -23,7 +20,7 @@ int main(void)
 {
 
 	//USART Hardware setup
-	USART_setup(&serial,USART_1); 	
+	USART_setup(USART_1); 	
 	USART_setRxISR(&serial,&dataAvailable);
 
 	//Setup the fifo buffer 
@@ -51,6 +48,6 @@ void dataAvailable(uint8_t byte){
 void getrx(uint8_t byte){
 
     //Echo back to terminal
-    serial.put(byte);
+    USART_put(USART1,byte);
 }
 

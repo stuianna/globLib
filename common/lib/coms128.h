@@ -52,6 +52,7 @@
 #define TX_SIZE 128
 /*! 
     @brief Macro function for simpler initialization
+    @param X The serial USART number
 */
 #define COMS(X) USART_setTxISR(X,COMOUT_con128(USART_add_put(X)))
 

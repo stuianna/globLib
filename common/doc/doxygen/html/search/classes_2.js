@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mpu6050',['MPU6050',['../group__MPU6050.html#structMPU6050',1,'']]]
+  ['lsm9ds1',['LSM9DS1',['../group__LSM9DS1.html#structLSM9DS1',1,'']]]
 ];

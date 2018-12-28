@@ -2,17 +2,14 @@
 #include <stm32f103cb_core.h>
 #include "string11.h"
 
-//Create an instance for the USART object -> required for demo
-USART serial;
-
 int main(void)
 {
 
 	//USART Hardware setup
-	USART_setup(&serial,USART_1); 	
+	USART_setup(USART_1); 	
 
     //Set the string11 library to output on the USART.put function
-    STRING11_setOutput(serial.put);
+    STRING11_setOutput(USART_add_put(USART_1));
 
     //Create some variables
     uint8_t a = 12;

@@ -2,7 +2,7 @@
     @file string11.c
     @brief Source file for string11.h
     @author Stuart Ianna
-    @version 1.0
+    @version 0.2 
     @date June 2018
     @copyright GNU GPLv3
     @warning None
@@ -53,10 +53,85 @@ int32_t str2int(char *buffer){
     
 }
 
+uint32_t str2uint(char *buffer){
+
+    uint8_t i = 0;
+    uint32_t number = 0;
+
+    while((buffer[i] != '\0') && i < 125){
+
+        number *= 10;
+        number += buffer[i]-48;
+        i++;
+
+        if(i > 120){
+
+            number = 0;
+            break;
+        }
+    }
+    return number;
+}
+
+float str2float(char *buffer){
+
+    uint8_t isMinus = 0;
+    uint8_t i = 0;
+    float number = 0;
+    uint8_t pointLocation = 127;
+
+    if(buffer[0] == '-'){
+
+        isMinus = 1;
+        i = 1;
+    }
+
+    while((buffer[i] != '\0') && i < 125){
+
+        if(buffer[i] == 46){
+
+            pointLocation = i;
+            i++;
+            continue;
+        }
+
+        number *= 10;
+        number += buffer[i]-48;
+        i++;
+
+        if(i > 120){
+
+            number = 0;
+            break;
+        }
+    }
+
+    if(isMinus){
+
+        number *= -1;
+    }
+
+    for(int8_t j = 0; j < (i - pointLocation - 1); j++){
+
+        number /= 10;
+    }
+
+    return number;
+}
+
 void STRING11_setOutput(void (*out_fun)(uint8_t)){
 
     out = out_fun;
     return;
+}
+
+v_fp_u8 STRING11_getOutput(void){
+
+    if(out == NULL){
+
+        return NULL;
+    }
+    return out;
 }
 
 void print_c(char x){
@@ -92,8 +167,11 @@ void print_8(int8_t x){
     if(x < 0){
 
         out('-');
+        print_u8(x*-1);
+        return;
     }
-    print_u8(x*-1);
+
+    print_u8(x);
 
 }
 

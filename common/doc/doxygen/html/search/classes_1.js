@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lsm9ds1',['LSM9DS1',['../group__LSM9DS1.html#structLSM9DS1',1,'']]]
+  ['fifo8',['FIFO8',['../group__FIFO8.html#structFIFO8',1,'']]]
 ];

@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('string11_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">string11.h File Reference<div class="ingroups"><a class="el" href="group__COMMON.html">COMMON</a> &raquo; <a class="el" href="group__String11.html">String11</a></div></div>  </div>
@@ -136,18 +137,34 @@ Macros</h2></td></tr>
 <tr class="memdesc:gad5bdf0ae6e943f32dba14b622571f74f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a given datatype + 'tab' to the output stream. <br /></td></tr>
 <tr class="separator:gad5bdf0ae6e943f32dba14b622571f74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0b2be47d24fc3cb46a06f4eca80e3fea"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__String11.html#ga0b2be47d24fc3cb46a06f4eca80e3fea">MAX_DEC</a>&#160;&#160;&#160;2</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__String11.html#ga0b2be47d24fc3cb46a06f4eca80e3fea">MAX_DEC</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memdesc:ga0b2be47d24fc3cb46a06f4eca80e3fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of decimal places a float will contain. <br /></td></tr>
 <tr class="separator:ga0b2be47d24fc3cb46a06f4eca80e3fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gae8eca16345cafaba7c5774b05b77cf8f"><td class="memItemLeft" align="right" valign="top">
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__String11.html#gae8eca16345cafaba7c5774b05b77cf8f">v_fp_u8</a>) (uint8_t)</td></tr>
+<tr class="memdesc:gae8eca16345cafaba7c5774b05b77cf8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer typedef for void function with uint8_t parameter. <br /></td></tr>
+<tr class="separator:gae8eca16345cafaba7c5774b05b77cf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaac5ff1fc627bc4145d761466f6eb48b0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__String11.html#gaac5ff1fc627bc4145d761466f6eb48b0">str2int</a> (char *buffer)</td></tr>
 <tr class="memdesc:gaac5ff1fc627bc4145d761466f6eb48b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a null terminated string to an integer.  <a href="group__String11.html#gaac5ff1fc627bc4145d761466f6eb48b0">More...</a><br /></td></tr>
 <tr class="separator:gaac5ff1fc627bc4145d761466f6eb48b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga565c7011c71f2e1d4a0561ef80042b80"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__String11.html#ga565c7011c71f2e1d4a0561ef80042b80">str2uint</a> (char *buffer)</td></tr>
+<tr class="memdesc:ga565c7011c71f2e1d4a0561ef80042b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a null terminated string to an unsigned integer.  <a href="group__String11.html#ga565c7011c71f2e1d4a0561ef80042b80">More...</a><br /></td></tr>
+<tr class="separator:ga565c7011c71f2e1d4a0561ef80042b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a727149afa6728dbf7083f93c129f5e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__String11.html#ga5a727149afa6728dbf7083f93c129f5e">str2float</a> (char *buffer)</td></tr>
+<tr class="memdesc:ga5a727149afa6728dbf7083f93c129f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a null terminated string to a float.  <a href="group__String11.html#ga5a727149afa6728dbf7083f93c129f5e">More...</a><br /></td></tr>
+<tr class="separator:ga5a727149afa6728dbf7083f93c129f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9408b094827c7b00641d85835212d9a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__String11.html#ga9408b094827c7b00641d85835212d9a9">STRING11_setOutput</a> (void(*out)(uint8_t))</td></tr>
 <tr class="memdesc:ga9408b094827c7b00641d85835212d9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the target output stream for print functions.  <a href="group__String11.html#ga9408b094827c7b00641d85835212d9a9">More...</a><br /></td></tr>
 <tr class="separator:ga9408b094827c7b00641d85835212d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4464bf2970970c9f51b9533bd552bc7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__String11.html#gae8eca16345cafaba7c5774b05b77cf8f">v_fp_u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__String11.html#ga4464bf2970970c9f51b9533bd552bc7f">STRING11_getOutput</a> (void)</td></tr>
+<tr class="memdesc:ga4464bf2970970c9f51b9533bd552bc7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current target output stream.  <a href="group__String11.html#ga4464bf2970970c9f51b9533bd552bc7f">More...</a><br /></td></tr>
+<tr class="separator:ga4464bf2970970c9f51b9533bd552bc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga62be7309beaf7ee453731af436999302"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__String11.html#ga62be7309beaf7ee453731af436999302">print_c</a> (char x)</td></tr>
 <tr class="memdesc:ga62be7309beaf7ee453731af436999302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a character to the output stream. Implemented internally.  <a href="group__String11.html#ga62be7309beaf7ee453731af436999302">More...</a><br /></td></tr>
 <tr class="separator:ga62be7309beaf7ee453731af436999302"><td class="memSeparator" colspan="2">&#160;</td></tr>

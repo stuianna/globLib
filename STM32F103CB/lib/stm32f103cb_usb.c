@@ -37,16 +37,16 @@ static const struct usb_device_descriptor dev = {
 	.bLength = USB_DT_DEVICE_SIZE,
 	.bDescriptorType = USB_DT_DEVICE,
 	.bcdUSB = 0x0200,
-	.bDeviceClass = USB_CLASS_CDC,
-	.bDeviceSubClass = 0,
-	.bDeviceProtocol = 0,
+	.bDeviceClass = 0x0,
+	.bDeviceSubClass = 0x0,
+	.bDeviceProtocol = 0x0,
 	.bMaxPacketSize0 = 64,
 	.idVendor = 0x0483,
 	.idProduct = 0x5740,
 	.bcdDevice = 0x0200,
-	.iManufacturer = 1,
-	.iProduct = 2,
-	.iSerialNumber = 3,
+	.iManufacturer = 0,
+	.iProduct = 0,
+	.iSerialNumber = 1,
 	.bNumConfigurations = 1,
 };
 
@@ -163,9 +163,7 @@ static const struct usb_config_descriptor config = {
 };
 
 static const char *usb_strings[] = {
-	"Glob_lib",
-	"USB",
-	"BASIC",
+	"asdfgh"
 };
 
 
@@ -294,14 +292,14 @@ void USB_setup(void){
                 &dev, 
                 &config, 
                 usb_strings, 
-                3, 
+                1, 
                 usbd_control_buffer, 
                 sizeof(usbd_control_buffer));
-	            usbd_register_set_config_callback(usbd_dev, cdcacm_set_config);
+    usbd_register_set_config_callback(usbd_dev, cdcacm_set_config);
 
 
     //Need to have this here to handle initial setup of USB
-    for(volatile int i = 0; i < 10000; i++){
+    for(volatile int i = 0; i < 50000; i++){
 
         usbd_poll(usbd_dev);
     }

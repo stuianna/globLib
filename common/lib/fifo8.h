@@ -9,8 +9,8 @@
     @details 
 
     @author Stuart Ianna
-    @version 1.0
-    @date June 2018
+    @version 0.11
+    @date December 2018
     @copyright GNU GPLv3
     @warning None
     @bug None
@@ -125,6 +125,12 @@ uint16_t FIFO8_size(FIFO8 *target);
     @return E_FIFO_EMPTY if called when the buffer is already empty, E_FIFO_NOERROR if not.
 */
 fifo8_error_t FIFO8_flush(FIFO8 *target);
+
+/*! 
+    @brief Reset the fifo buffer and set its size to 0
+*/
+
+uint8_t FIFO8_pop(FIFO8 *target);
 
 /**@}*/
 /**@}*/

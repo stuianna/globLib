@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fifo8',['FIFO8',['../group__FIFO8.html#structFIFO8',1,'']]]
+  ['at24c256',['AT24C256',['../group__AT24C256.html#structAT24C256',1,'']]]
 ];

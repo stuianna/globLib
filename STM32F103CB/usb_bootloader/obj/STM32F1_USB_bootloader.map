@@ -17,7 +17,7 @@ Archive member included to satisfy reference by file (symbol)
 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_cmpsf2.o)
                               /home/stuart/Dropbox/git/globLib/common/lib/string11.o (__aeabi_fcmplt)
 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_fixsfsi.o)
-                              /home/stuart/Dropbox/git/globLib/common/lib/string11.o (__aeabi_f2iz)
+                              /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o (__aeabi_f2iz)
 /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_fixunssfsi.o)
                               /home/stuart/Dropbox/git/globLib/common/lib/string11.o (__aeabi_f2uiz)
 /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(adc.o)
@@ -82,6 +82,88 @@ Discarded input sections
  .text          0x0000000000000000        0x0 obj/usb_bootloader.o
  .data          0x0000000000000000        0x0 obj/usb_bootloader.o
  .bss           0x0000000000000000        0x0 obj/usb_bootloader.o
+ .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
+ .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
+ .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
+ .text.AT24C256_setup
+                0x0000000000000000        0x6 /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
+ .text.AT24C256_writeByte
+                0x0000000000000000       0x3a /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
+ .text.AT24C256_readByte
+                0x0000000000000000       0x46 /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
+ .comment       0x0000000000000000       0x39 /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
+ .ARM.attributes
+                0x0000000000000000       0x33 /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
+ .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_sendAck
+                0x0000000000000000       0x1e /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_sendNack
+                0x0000000000000000       0x1e /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_call_if_first
+                0x0000000000000000       0x18 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_checkKey
+                0x0000000000000000       0xdc /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.UCCONFIG_loop
+                0x0000000000000000       0x38 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.UCCONFIG_setOnEnter
+                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.UCCONFIG_setOnExit
+                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.UCCONFIG_setOnFirstWrite
+                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_get_c
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_get_u8
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_get_8
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_get_u16
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_get_16
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_get_u32
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_get_32
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.ucconfig_get_float
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.UCCONFIG_setAddressOffset
+                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.UCCONFIG_setup
+                0x0000000000000000       0x54 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .text.UCCONFIG_listen
+                0x0000000000000000      0x668 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .data.dump_pos.5327
+                0x0000000000000000        0x1 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_fifo_buffer
+                0x0000000000000000       0x20 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_fp_flashRead
+                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_fp_onFirstWrite
+                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_fp_flashWrite
+                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_fp_serialWrite
+                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_written
+                0x0000000000000000        0x2 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_fifo
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_fp_onExit
+                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_memPointer
+                0x0000000000000000        0x2 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_fp_onEnter
+                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_memPointerOffset
+                0x0000000000000000        0x2 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .bss.ucconfig_activeMode
+                0x0000000000000000        0x2 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .comment       0x0000000000000000       0x39 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ .ARM.attributes
+                0x0000000000000000       0x33 /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
  .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
  .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
  .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
@@ -180,6 +262,54 @@ Discarded input sections
  .comment       0x0000000000000000       0x39 /home/stuart/Dropbox/git/globLib/common/lib/lsm9ds1.o
  .ARM.attributes
                 0x0000000000000000       0x33 /home/stuart/Dropbox/git/globLib/common/lib/lsm9ds1.o
+ .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_setOutput
+                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_setInput
+                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_getOutput
+                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_getInput
+                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_write_u8
+                0x0000000000000000       0x14 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_read_u8
+                0x0000000000000000       0x1c /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_write_8
+                0x0000000000000000       0x18 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_read_8
+                0x0000000000000000       0x1c /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_write_c
+                0x0000000000000000       0x14 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_read_c
+                0x0000000000000000       0x1c /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_write_u16
+                0x0000000000000000       0x24 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_read_u16
+                0x0000000000000000       0x2c /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_write_16
+                0x0000000000000000       0x24 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_read_16
+                0x0000000000000000       0x2c /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_write_u32
+                0x0000000000000000       0x3c /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_read_u32
+                0x0000000000000000       0x4c /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_write_32
+                0x0000000000000000       0x3c /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_read_32
+                0x0000000000000000       0x4c /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_write_float
+                0x0000000000000000       0x50 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .text.FLASHWRITE_read_float
+                0x0000000000000000       0x54 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .bss.in        0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .bss.out       0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .comment       0x0000000000000000       0x39 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+ .ARM.attributes
+                0x0000000000000000       0x33 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
  .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
  .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
  .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
@@ -193,6 +323,8 @@ Discarded input sections
                 0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
  .text.FIFO8_flush
                 0x0000000000000000       0x14 /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
+ .text.FIFO8_pop
+                0x0000000000000000       0x26 /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
  .comment       0x0000000000000000       0x39 /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
  .ARM.attributes
                 0x0000000000000000       0x33 /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
@@ -200,12 +332,18 @@ Discarded input sections
  .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/string11.o
  .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/common/lib/string11.o
  .text.str2int  0x0000000000000000       0x32 /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+ .text.str2uint
+                0x0000000000000000       0x22 /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+ .text.str2float
+                0x0000000000000000       0x80 /home/stuart/Dropbox/git/globLib/common/lib/string11.o
  .text.STRING11_setOutput
+                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+ .text.STRING11_getOutput
                 0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/string11.o
  .text.print_c  0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/common/lib/string11.o
  .text.print_u8
                 0x0000000000000000       0x64 /home/stuart/Dropbox/git/globLib/common/lib/string11.o
- .text.print_8  0x0000000000000000       0x20 /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+ .text.print_8  0x0000000000000000       0x24 /home/stuart/Dropbox/git/globLib/common/lib/string11.o
  .text.print_u16
                 0x0000000000000000       0x4c /home/stuart/Dropbox/git/globLib/common/lib/string11.o
  .text.print_16
@@ -462,6 +600,89 @@ Discarded input sections
                 0x0000000000000000       0xbc /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
  .text.USART_enableISR
                 0x0000000000000000       0xbc /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
+ .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.rtc_callback
+                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_setPrescaler
+                0x0000000000000000       0x24 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_calibrate
+                0x0000000000000000       0x60 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_setCount
+                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_clockEnable
+                0x0000000000000000        0x6 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_setup
+                0x0000000000000000       0x34 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_getCount
+                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_disableResolutionISR
+                0x0000000000000000        0x6 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_enableResolutionISR
+                0x0000000000000000       0x20 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_isResolutionEnabled
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_disableAlarmISR
+                0x0000000000000000        0x6 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_enableAlarmISR
+                0x0000000000000000       0x28 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_isAlarmEnabled
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_disableOverflowISR
+                0x0000000000000000        0x6 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_enableOverflowISR
+                0x0000000000000000       0x20 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text.RTC_isOverflowEnabled
+                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .bss.flag      0x0000000000000000        0x1 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .text.cdcacm_control_request
+                0x0000000000000000       0x1c /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .text.cdcacm_set_config
+                0x0000000000000000       0x50 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .text.cdcacm_data_rx_cb
+                0x0000000000000000       0x90 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .text.USB_setup
+                0x0000000000000000       0x70 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .text.USB_setGet
+                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .text.USB_update
+                0x0000000000000000       0x64 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .text.USB_put  0x0000000000000000       0x1c /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .rodata.dev    0x0000000000000000       0x12 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .bss.head      0x0000000000000000        0x1 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .bss.usbd_dev  0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .bss.usbd_control_buffer
+                0x0000000000000000       0x80 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .rodata.data_endp
+                0x0000000000000000       0x1e /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .rodata.comm_endp
+                0x0000000000000000        0xf /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .rodata.config
+                0x0000000000000000        0xd /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .rodata.ifaces
+                0x0000000000000000       0x20 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .rodata.cdcacm_functional_descriptors
+                0x0000000000000000       0x13 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .rodata.comm_iface
+                0x0000000000000000       0x15 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .bss.flashPos.6064
+                0x0000000000000000        0x1 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .rodata.str1.1
+                0x0000000000000000        0x7 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .rodata.data_iface
+                0x0000000000000000       0x15 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .bss.data_handler
+                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .bss.last.6065
+                0x0000000000000000        0x1 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .bss.tail      0x0000000000000000        0x1 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .bss.txbuffer  0x0000000000000000       0x40 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+ .data.usb_strings
+                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
  .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_core.o
  .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_core.o
  .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_core.o
@@ -561,53 +782,6 @@ Discarded input sections
                 0x0000000000000000      0x100 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
  .text.GPIO_ISRDisable
                 0x0000000000000000       0x5a /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .text.cdcacm_control_request
-                0x0000000000000000       0x1c /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .text.cdcacm_set_config
-                0x0000000000000000       0x50 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .text.cdcacm_data_rx_cb
-                0x0000000000000000       0x90 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .text.USB_setup
-                0x0000000000000000       0x70 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .text.USB_setGet
-                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .text.USB_update
-                0x0000000000000000       0x64 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .text.USB_put  0x0000000000000000       0x1c /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .rodata.dev    0x0000000000000000       0x12 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .bss.head      0x0000000000000000        0x1 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .bss.usbd_dev  0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .bss.usbd_control_buffer
-                0x0000000000000000       0x80 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .rodata.data_endp
-                0x0000000000000000       0x1e /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .rodata.comm_endp
-                0x0000000000000000        0xf /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .rodata.config
-                0x0000000000000000        0xd /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .rodata.ifaces
-                0x0000000000000000       0x20 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .rodata.cdcacm_functional_descriptors
-                0x0000000000000000       0x13 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .rodata.comm_iface
-                0x0000000000000000       0x15 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .bss.last.6519
-                0x0000000000000000        0x1 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .rodata.str1.1
-                0x0000000000000000       0x13 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .rodata.data_iface
-                0x0000000000000000       0x15 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .bss.data_handler
-                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .bss.tail      0x0000000000000000        0x1 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .bss.flashPos.6518
-                0x0000000000000000        0x1 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .bss.txbuffer  0x0000000000000000       0x40 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
- .data.usb_strings
-                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
  .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_power.o
  .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_power.o
  .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_power.o
@@ -632,42 +806,6 @@ Discarded input sections
                 0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
  .text.MCU_debugDisable
                 0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
- .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.rtc_callback
-                0x0000000000000000        0xc /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_setPrescaler
-                0x0000000000000000       0x24 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_calibrate
-                0x0000000000000000       0x60 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_setCount
-                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_clockEnable
-                0x0000000000000000        0x6 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_setup
-                0x0000000000000000       0x34 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_getCount
-                0x0000000000000000        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_disableResolutionISR
-                0x0000000000000000        0x6 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_enableResolutionISR
-                0x0000000000000000       0x20 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_isResolutionEnabled
-                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_disableAlarmISR
-                0x0000000000000000        0x6 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_enableAlarmISR
-                0x0000000000000000       0x28 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_isAlarmEnabled
-                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_disableOverflowISR
-                0x0000000000000000        0x6 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_enableOverflowISR
-                0x0000000000000000       0x20 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .text.RTC_isOverflowEnabled
-                0x0000000000000000       0x10 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
- .bss.flag      0x0000000000000000        0x1 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
  .text          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
  .data          0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
  .bss           0x0000000000000000        0x0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
@@ -2477,23 +2615,26 @@ ram              0x0000000020000000 0x0000000000005000 xrw
 Linker script and memory map
 
 LOAD obj/usb_bootloader.o
+LOAD /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
+LOAD /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 LOAD /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
 LOAD /home/stuart/Dropbox/git/globLib/common/lib/coms128.o
 LOAD /home/stuart/Dropbox/git/globLib/common/lib/lsm9ds1.o
+LOAD /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
 LOAD /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
 LOAD /home/stuart/Dropbox/git/globLib/common/lib/string11.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_flash.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
+LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_core.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_clock.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_adc.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
-LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_power.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
-LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_iwdg.o
 LOAD /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
@@ -2553,55 +2694,55 @@ END GROUP
  .text.usart3_isr
                 0x00000000080005c8       0x58 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
                 0x00000000080005c8                usart3_isr
- .text.spi1_isr
-                0x0000000008000620       0x3c /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
-                0x0000000008000620                spi1_isr
- .text.spi2_isr
-                0x000000000800065c       0x3c /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
-                0x000000000800065c                spi2_isr
- .text.gpio_translatePin
-                0x0000000008000698       0x92 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- *fill*         0x000000000800072a        0x2 
- .text.pinSetup
-                0x000000000800072c       0x88 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
-                0x000000000800072c                pinSetup
- .text.pinLow   0x00000000080007b4       0x10 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
-                0x00000000080007b4                pinLow
- .text.exti0_isr
-                0x00000000080007c4       0x18 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
-                0x00000000080007c4                exti0_isr
- .text.exti1_isr
-                0x00000000080007dc       0x18 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
-                0x00000000080007dc                exti1_isr
- .text.exti2_isr
-                0x00000000080007f4       0x18 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
-                0x00000000080007f4                exti2_isr
- .text.exti3_isr
-                0x000000000800080c       0x18 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
-                0x000000000800080c                exti3_isr
- .text.exti4_isr
-                0x0000000008000824       0x18 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
-                0x0000000008000824                exti4_isr
- .text.exti9_5_isr
-                0x000000000800083c       0x80 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
-                0x000000000800083c                exti9_5_isr
- .text.exti15_10_isr
-                0x00000000080008bc       0xa0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
-                0x00000000080008bc                exti15_10_isr
+ .text.rtc_isr  0x0000000008000620       0x4c /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+                0x0000000008000620                rtc_isr
  .text.USB_disconnect
-                0x000000000800095c       0x58 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
-                0x000000000800095c                USB_disconnect
+                0x000000000800066c       0x58 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+                0x000000000800066c                USB_disconnect
+ .text.spi1_isr
+                0x00000000080006c4       0x3c /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
+                0x00000000080006c4                spi1_isr
+ .text.spi2_isr
+                0x0000000008000700       0x3c /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
+                0x0000000008000700                spi2_isr
+ .text.gpio_translatePin
+                0x000000000800073c       0x92 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ *fill*         0x00000000080007ce        0x2 
+ .text.pinSetup
+                0x00000000080007d0       0x88 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+                0x00000000080007d0                pinSetup
+ .text.pinLow   0x0000000008000858       0x10 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+                0x0000000008000858                pinLow
+ .text.exti0_isr
+                0x0000000008000868       0x18 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+                0x0000000008000868                exti0_isr
+ .text.exti1_isr
+                0x0000000008000880       0x18 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+                0x0000000008000880                exti1_isr
+ .text.exti2_isr
+                0x0000000008000898       0x18 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+                0x0000000008000898                exti2_isr
+ .text.exti3_isr
+                0x00000000080008b0       0x18 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+                0x00000000080008b0                exti3_isr
+ .text.exti4_isr
+                0x00000000080008c8       0x18 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+                0x00000000080008c8                exti4_isr
+ .text.exti9_5_isr
+                0x00000000080008e0       0x80 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+                0x00000000080008e0                exti9_5_isr
+ .text.exti15_10_isr
+                0x0000000008000960       0xa0 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+                0x0000000008000960                exti15_10_isr
  .text.hard_fault_handler
-                0x00000000080009b4       0x38 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_power.o
-                0x00000000080009b4                hard_fault_handler
+                0x0000000008000a00       0x38 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_power.o
+                0x0000000008000a00                hard_fault_handler
  .text.MCU_debugIsEnabled
-                0x00000000080009ec       0x10 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
-                0x00000000080009ec                MCU_debugIsEnabled
+                0x0000000008000a38       0x10 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
+                0x0000000008000a38                MCU_debugIsEnabled
  .text.MCU_printError
-                0x00000000080009fc       0x44 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
-                0x00000000080009fc                MCU_printError
- .text.rtc_isr  0x0000000008000a40       0x4c /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
-                0x0000000008000a40                rtc_isr
+                0x0000000008000a48       0x44 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
+                0x0000000008000a48                MCU_printError
  .text.sys_tick_handler
                 0x0000000008000a8c        0xc /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
                 0x0000000008000a8c                sys_tick_handler
@@ -3034,54 +3175,54 @@ END GROUP
                 0x0000000020000854        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
  .bss.usart2_isr_tx
                 0x0000000020000858        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
- .bss.spi1_rx_handler
-                0x000000002000085c        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
- .bss.spi2_tx_handler
-                0x0000000020000860        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
- .bss.spi1_tx_handler
-                0x0000000020000864        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
- .bss.spi2_rx_handler
-                0x0000000020000868        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
- .bss.pin3_handler
-                0x000000002000086c        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin1_handler
-                0x0000000020000870        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin15_handler
-                0x0000000020000874        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin8_handler
-                0x0000000020000878        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin13_handler
-                0x000000002000087c        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin6_handler
-                0x0000000020000880        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin11_handler
-                0x0000000020000884        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin4_handler
-                0x0000000020000888        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin2_handler
-                0x000000002000088c        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin0_handler
-                0x0000000020000890        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin9_handler
-                0x0000000020000894        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin14_handler
-                0x0000000020000898        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin7_handler
-                0x000000002000089c        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin12_handler
-                0x00000000200008a0        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin5_handler
-                0x00000000200008a4        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.pin10_handler
-                0x00000000200008a8        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .bss.debug_out
-                0x00000000200008ac        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
  .bss.rtc_resolution_handler
-                0x00000000200008b0        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+                0x000000002000085c        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
  .bss.rtc_overflow_handler
-                0x00000000200008b4        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+                0x0000000020000860        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
  .bss.rtc_alarm_handler
-                0x00000000200008b8        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+                0x0000000020000864        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .bss.spi1_rx_handler
+                0x0000000020000868        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
+ .bss.spi2_tx_handler
+                0x000000002000086c        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
+ .bss.spi1_tx_handler
+                0x0000000020000870        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
+ .bss.spi2_rx_handler
+                0x0000000020000874        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
+ .bss.pin3_handler
+                0x0000000020000878        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin1_handler
+                0x000000002000087c        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin15_handler
+                0x0000000020000880        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin8_handler
+                0x0000000020000884        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin13_handler
+                0x0000000020000888        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin6_handler
+                0x000000002000088c        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin11_handler
+                0x0000000020000890        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin4_handler
+                0x0000000020000894        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin2_handler
+                0x0000000020000898        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin0_handler
+                0x000000002000089c        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin9_handler
+                0x00000000200008a0        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin14_handler
+                0x00000000200008a4        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin7_handler
+                0x00000000200008a8        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin12_handler
+                0x00000000200008ac        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin5_handler
+                0x00000000200008b0        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.pin10_handler
+                0x00000000200008b4        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+ .bss.debug_out
+                0x00000000200008b8        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
  .bss.systick_handler
                 0x00000000200008bc        0x4 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
                 0x00000000200008bc                systick_handler
@@ -3107,12 +3248,12 @@ OUTPUT(bin/STM32F1_USB_bootloader.elf elf32-littlearm)
                                          0x39 (size before relaxing)
  .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
  .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
+ .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+ .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
  .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
  .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
- .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
  .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_power.o
  .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
- .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
  .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
  .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(flash.o)
  .comment       0x0000000000000038       0x39 /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(gpio.o)
@@ -3143,17 +3284,17 @@ OUTPUT(bin/STM32F1_USB_bootloader.elf elf32-littlearm)
  .ARM.attributes
                 0x0000000000000066       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
  .ARM.attributes
-                0x0000000000000099       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
+                0x0000000000000099       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
  .ARM.attributes
-                0x00000000000000cc       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
+                0x00000000000000cc       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
  .ARM.attributes
-                0x00000000000000ff       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
+                0x00000000000000ff       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
  .ARM.attributes
-                0x0000000000000132       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_power.o
+                0x0000000000000132       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
  .ARM.attributes
-                0x0000000000000165       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
+                0x0000000000000165       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_power.o
  .ARM.attributes
-                0x0000000000000198       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
+                0x0000000000000198       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_debug.o
  .ARM.attributes
                 0x00000000000001cb       0x33 /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
  .ARM.attributes
@@ -3458,6 +3599,9 @@ ADC_addChannel                                    /home/stuart/Dropbox/git/globL
 ADC_sample                                        /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_adc.o
 ADC_setup                                         /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_adc.o
 ADC_volts                                         /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_adc.o
+AT24C256_readByte                                 /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
+AT24C256_setup                                    /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
+AT24C256_writeByte                                /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
 CLOCK_getSpeed                                    /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_clock.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
@@ -3469,13 +3613,59 @@ CLOCK_setSpeed                                    /home/stuart/Dropbox/git/globL
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_core.o
 COMOUT_con128                                     /home/stuart/Dropbox/git/globLib/common/lib/coms128.o
 FIFO8_flush                                       /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 FIFO8_get                                         /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/coms128.o
 FIFO8_init                                        /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/coms128.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FIFO8_pop                                         /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 FIFO8_put                                         /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/coms128.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 FIFO8_size                                        /home/stuart/Dropbox/git/globLib/common/lib/fifo8.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_getInput                               /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_getOutput                              /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_read_16                                /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_read_32                                /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_read_8                                 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_read_c                                 /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_read_float                             /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_read_u16                               /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_read_u32                               /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_read_u8                                /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_setInput                               /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_setOutput                              /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_write_16                               /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_write_32                               /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_write_8                                /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_write_c                                /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_write_float                            /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_write_u16                              /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_write_u32                              /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+FLASHWRITE_write_u8                               /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 FLASH_clearPage                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_flash.o
 FLASH_firstEmptyPage                              /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_flash.o
 FLASH_pageEmpty                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_flash.o
@@ -3488,17 +3678,22 @@ GPIO_ISRDisable                                   /home/stuart/Dropbox/git/globL
 GPIO_ISREnable                                    /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
 I2C_address                                       /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
 I2C_read                                          /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
 I2C_repeatRead                                    /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
 I2C_setup                                         /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
 I2C_start                                         /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
 I2C_stop                                          /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
 I2C_write                                         /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/at24c256.o
 IWDG_feed                                         /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_iwdg.o
 IWDG_resetCheck                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_iwdg.o
 IWDG_setup                                        /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_iwdg.o
@@ -3527,10 +3722,10 @@ MCU_debugIsEnabled                                /home/stuart/Dropbox/git/globL
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_iwdg.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
-                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_adc.o
+                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_flash.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
@@ -3538,10 +3733,10 @@ MCU_printError                                    /home/stuart/Dropbox/git/globL
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_iwdg.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
-                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_adc.o
+                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_flash.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
@@ -3599,14 +3794,17 @@ SPI_setSpeed                                      /home/stuart/Dropbox/git/globL
 SPI_setup                                         /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
 SPI_write                                         /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/lsm9ds1.o
+STRING11_getOutput                                /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 STRING11_setOutput                                /home/stuart/Dropbox/git/globLib/common/lib/string11.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_core.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/coms128.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 SYSTICK_count                                     /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
 SYSTICK_handler                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
 SYSTICK_setup                                     /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
-                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_core.o
+                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
 SYSTICK_start                                     /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
 SYSTICK_stop                                      /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
@@ -3627,6 +3825,13 @@ TIMER_setupCount                                  /home/stuart/Dropbox/git/globL
 TIMER_setupIC                                     /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
 TIMER_setupPWM                                    /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
 TIMER_setupPulse                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
+UCCONFIG_listen                                   /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+UCCONFIG_loop                                     /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+UCCONFIG_setAddressOffset                         /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+UCCONFIG_setOnEnter                               /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+UCCONFIG_setOnExit                                /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+UCCONFIG_setOnFirstWrite                          /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+UCCONFIG_setup                                    /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 USART_add_put                                     /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
 USART_disableISR                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
 USART_enableISR                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
@@ -3670,6 +3875,7 @@ __aeabi_f2d                                       /usr/lib/gcc/arm-none-eabi/4.9
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_adc.o
 __aeabi_f2iz                                      /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_fixsfsi.o)
                                                   /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
 __aeabi_f2uiz                                     /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_fixunssfsi.o)
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_iwdg.o
@@ -3677,6 +3883,7 @@ __aeabi_f2uiz                                     /usr/lib/gcc/arm-none-eabi/4.9
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/string11.o
 __aeabi_fadd                                      /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_addsubsf3.o)
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/string11.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/lsm9ds1.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
 __aeabi_fcmpeq                                    /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_cmpsf2.o)
@@ -3690,11 +3897,14 @@ __aeabi_fdiv                                      /usr/lib/gcc/arm-none-eabi/4.9
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_iwdg.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
 __aeabi_fmul                                      /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_muldivsf3.o)
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_systick.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/lsm9ds1.o
 __aeabi_frsub                                     /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_addsubsf3.o)
 __aeabi_fsub                                      /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_addsubsf3.o)
@@ -3703,6 +3913,7 @@ __aeabi_fsub                                      /usr/lib/gcc/arm-none-eabi/4.9
 __aeabi_i2d                                       /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_addsubdf3.o)
 __aeabi_i2f                                       /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_addsubsf3.o)
                                                   /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/flashWrite.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/lsm9ds1.o
                                                   /home/stuart/Dropbox/git/globLib/common/lib/mpu6050.o
 __aeabi_l2d                                       /usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m/libgcc.a(_arm_addsubdf3.o)
@@ -4012,9 +4223,9 @@ nvic_disable_irq                                  /home/stuart/Dropbox/git/globL
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
 nvic_enable_irq                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(nvic.o)
-                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
+                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_rtc.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
 nvic_generate_software_interrupt                  /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(nvic.o)
@@ -4030,27 +4241,35 @@ pend_sv_handler                                   /home/stuart/Dropbox/git/globL
 pinHigh                                           /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
 pinLow                                            /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
-                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
+                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
 pinRead                                           /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
 pinSetup                                          /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
-                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_adc.o
+                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
 pinToggle                                         /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
 pinWrite                                          /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
 print_16                                          /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 print_32                                          /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 print_8                                           /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 print_c                                           /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 print_f                                           /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 print_s                                           /home/stuart/Dropbox/git/globLib/common/lib/string11.o
 print_u16                                         /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 print_u32                                         /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 print_u8                                          /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 printc_16                                         /home/stuart/Dropbox/git/globLib/common/lib/string11.o
 printc_32                                         /home/stuart/Dropbox/git/globLib/common/lib/string11.o
 printc_8                                          /home/stuart/Dropbox/git/globLib/common/lib/string11.o
@@ -4157,10 +4376,10 @@ rcc_periph_clock_enable                           /home/stuart/Dropbox/git/globL
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(rtc.o)
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_i2c.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_power.o
-                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_gpio.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_spi.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_adc.o
+                                                  /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_timer.o
                                                   obj/usb_bootloader.o
@@ -4334,7 +4553,12 @@ st_usbfs_set_ep_rx_bufsize                        /home/stuart/Dropbox/git/globL
 st_usbfs_v1_usb_driver                            /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(st_usbfs_v1.o)
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usb.o
                                                   obj/usb_bootloader.o
+str2float                                         /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 str2int                                           /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+str2uint                                          /home/stuart/Dropbox/git/globLib/common/lib/string11.o
+                                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 strlen                                            /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv7-m/libg.a(lib_a-strlen.o)
                                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(usb_standard.o)
 sv_call_handler                                   /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
@@ -4466,6 +4690,14 @@ timer_update_on_any                               /home/stuart/Dropbox/git/globL
 timer_update_on_overflow                          /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(timer_common_all.o)
 uart4_isr                                         /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
 uart5_isr                                         /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
+ucconfig_get_16                                   /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ucconfig_get_32                                   /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ucconfig_get_8                                    /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ucconfig_get_c                                    /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ucconfig_get_float                                /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ucconfig_get_u16                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ucconfig_get_u32                                  /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
+ucconfig_get_u8                                   /home/stuart/Dropbox/git/globLib/common/lib/ucconfig.o
 usage_fault_handler                               /home/stuart/Dropbox/git/globLib/STM32F103CB/libopencm3/lib/libopencm3_stm32f1.a(vector.o)
 usart1_isr                                        /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
 usart2_isr                                        /home/stuart/Dropbox/git/globLib/STM32F103CB/lib/stm32f103cb_usart.o
