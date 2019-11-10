@@ -1,6 +1,0 @@
-<map id="pinToggle" name="pinToggle">
-<area shape="rect" id="node2" href="$a00058.html#ga2bf612d83d7f5bc449e715ae52403165" title="Set a given gpio pin on a port to a logic state. " alt="" coords="132,31,203,57"/>
-<area shape="rect" id="node5" href="$a00058.html#gab6259aeec08dfbe7bfbcb279ff2deb63" title="Read the current digital value of an input pin. " alt="" coords="132,81,203,108"/>
-<area shape="rect" id="node3" href="$a00058.html#ga31cf286257cb725f26d7d2f6bd43808d" title="Set a given gpio pin on a port to logic low. " alt="" coords="253,5,315,32"/>
-<area shape="rect" id="node4" href="$a00058.html#ga60dbd36de5e47d617e8ce61e473ac2bc" title="Set a given gpio pin on a port to logic high. " alt="" coords="251,56,317,83"/>
-</map>

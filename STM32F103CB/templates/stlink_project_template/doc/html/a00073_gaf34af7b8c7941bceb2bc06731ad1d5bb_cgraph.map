@@ -1,5 +1,0 @@
-<map id="prints_f" name="prints_f">
-<area shape="rect" id="node2" href="$a00073.html#ga050e411e1a191adebf07951fa36a638f" title="Send a float to the output stream. Implemented internally. " alt="" coords="120,5,179,32"/>
-<area shape="rect" id="node4" href="$a00073.html#ga62be7309beaf7ee453731af436999302" title="Send a character to the output stream. Implemented internally. " alt="" coords="119,56,180,83"/>
-<area shape="rect" id="node3" href="$a00073.html#gaa38f5619433be12853e1ee67eb2e349d" title="Send a unsigned integer to the output stream. Implemented internally. " alt="" coords="228,5,303,32"/>
-</map>

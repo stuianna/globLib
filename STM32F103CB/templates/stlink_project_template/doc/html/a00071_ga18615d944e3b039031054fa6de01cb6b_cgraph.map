@@ -1,9 +1,0 @@
-<map id="LSM9DS1_setGyrScale" name="LSM9DS1_setGyrScale">
-<area shape="rect" id="node2" href="$a00063.html#ga1389a35e2016f7d9aa2df074340f4010" title="Read a data frame from the slave device using standard protocole. " alt="" coords="216,5,292,32"/>
-<area shape="rect" id="node5" href="$a00063.html#gaca4248695f03439705de0c410f215bc4" title="Write a data frame to a slave device using standard protocole. " alt="" coords="215,56,293,83"/>
-<area shape="rect" id="node3" href="$a00058.html#ga31cf286257cb725f26d7d2f6bd43808d" title="Set a given gpio pin on a port to logic low. " alt="" coords="345,56,407,83"/>
-<area shape="rect" id="node4" href="$a00058.html#ga60dbd36de5e47d617e8ce61e473ac2bc" title="Set a given gpio pin on a port to logic high. " alt="" coords="343,5,409,32"/>
-<area shape="rect" id="node6" href="$a00063.html#gadcac5e0cc366bc5aabceae747ba09cda" title="Send one data frame on the data bus. (blocking) " alt="" coords="341,107,411,133"/>
-<area shape="rect" id="node7" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="459,81,612,108"/>
-<area shape="rect" id="node8" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="479,132,592,159"/>
-</map>

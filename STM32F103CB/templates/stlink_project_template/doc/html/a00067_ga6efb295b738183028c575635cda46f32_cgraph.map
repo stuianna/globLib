@@ -1,6 +1,0 @@
-<map id="USB_disconnect" name="USB_disconnect">
-<area shape="rect" id="node2" href="$a00058.html#ga01f517598d7596a7facf50a44615e56e" title="Setup a GPIO pin for a given function. " alt="" coords="173,31,247,57"/>
-<area shape="rect" id="node5" href="$a00058.html#ga31cf286257cb725f26d7d2f6bd43808d" title="Set a given gpio pin on a port to logic low. " alt="" coords="179,81,241,108"/>
-<area shape="rect" id="node3" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="295,5,448,32"/>
-<area shape="rect" id="node4" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="315,56,428,83"/>
-</map>
