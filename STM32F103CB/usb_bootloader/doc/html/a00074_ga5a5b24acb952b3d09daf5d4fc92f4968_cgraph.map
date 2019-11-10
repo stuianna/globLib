@@ -1,5 +1,0 @@
-<map id="usbdfu_set_config" name="usbdfu_set_config">
-<area shape="rect" id="node2" href="$a00074.html#ga42c8980be108448e3a7f51377a740077" title="Handle control requests from the host. " alt="" coords="181,31,339,57"/>
-<area shape="rect" id="node3" href="$a00074.html#ga1102a7b6b769cd34da407c00e1934c4e" title="Get USB Status. " alt="" coords="417,5,539,32"/>
-<area shape="rect" id="node4" href="$a00074.html#ga78274523a96522597188d4df64dd6ae2" title="Burn the program to the flash memory. " alt="" coords="387,56,569,83"/>
-</map>

@@ -1,9 +1,14 @@
+# Documentation main folder
 doc/doxygen/html
-common/doc/doxygen/html
-STM32F103CB/lib/*.o
-STM32F103CB/templates/stlink_project_template/bin
-STM32F103CB/templates/stlink_project_template/obj
-STM32F103CB/templates/stlink_project_template/doc/html
-STM32F103CB/templates/bootloader_project_template/doc/html
-common/lib/*.o
+
+# Common library
+lib/common/doc/doxygen/html
+
+# stm32f767zi library
+lib/stm32f767zi/doc/doxygen/html
+lib/stm32f767zi/obj
+
+# Templates
+templates/stm32f767zi/bin
+templates/stm32f767zi/obj
 
