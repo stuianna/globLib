@@ -1,4 +1,0 @@
-<map id="SPI_read" name="SPI_read">
-<area shape="rect" id="node2" href="$a00058.html#ga31cf286257cb725f26d7d2f6bd43808d" title="Set a given gpio pin on a port to logic low. " alt="" coords="131,5,194,32"/>
-<area shape="rect" id="node3" href="$a00058.html#ga60dbd36de5e47d617e8ce61e473ac2bc" title="Set a given gpio pin on a port to logic high. " alt="" coords="129,56,196,83"/>
-</map>

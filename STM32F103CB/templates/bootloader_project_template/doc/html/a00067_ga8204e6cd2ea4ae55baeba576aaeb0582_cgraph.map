@@ -1,7 +1,0 @@
-<map id="USB_setup" name="USB_setup">
-<area shape="rect" id="node2" href="$a00067.html#ga6efb295b738183028c575635cda46f32" title="Dissconnect the USB device from the HOST. " alt="" coords="143,56,263,83"/>
-<area shape="rect" id="node3" href="$a00058.html#ga01f517598d7596a7facf50a44615e56e" title="Setup a GPIO pin for a given function. " alt="" coords="311,31,384,57"/>
-<area shape="rect" id="node6" href="$a00058.html#ga31cf286257cb725f26d7d2f6bd43808d" title="Set a given gpio pin on a port to logic low. " alt="" coords="316,81,379,108"/>
-<area shape="rect" id="node4" href="$a00056.html#ga614572dee15ef0779db99ea82eeb0eba" title="Checks if debug is enabled. " alt="" coords="432,5,585,32"/>
-<area shape="rect" id="node5" href="$a00056.html#ga81ef53ef853b20441647e4f7b205e05f" title="Print a given error number as a character stream. " alt="" coords="452,56,565,83"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="ATTINY13A" name="ATTINY13A">
-<area shape="rect" id="node1" href="$a00018.html" title="Generic header file to include all modules. " alt="" coords="151,5,213,32"/>
-<area shape="rect" id="node2" href="$a00017.html" title="This module contains low level functions modifying clock parameters. " alt="" coords="148,56,216,83"/>
-<area shape="rect" id="node4" href="$a00020.html" title="This module contains low level functions GPIO access. " alt="" coords="155,107,209,133"/>
-<area shape="rect" id="node5" href="$a00019.html" title="This module contains error code definitions for all libraries. " alt="" coords="147,157,217,184"/>
-</map>
