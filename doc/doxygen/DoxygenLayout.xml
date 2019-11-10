@@ -5,9 +5,8 @@
     <tab type="mainpage" url="index.html" visible="yes" title=""/>
     <tab type="pages" visible="no" title="" intro=""/>
     <tab type="modules" visible="yes" title="" intro=""/>
-    <tab type="user" url="../../../common/doc/doxygen/html/index.html" title="Common"/>
-    <tab type="user" url="../../../ATTINY13A/doc/doxygen/html/index.html" title="ATTINY13A"/>
-    <tab type="user" url="../../../STM32F103CB/doc/doxygen/html/index.html" title="STM32F103CB"/>
+    <tab type="user" url="../../../lib/common/doc/doxygen/html/index.html" title="Common"/>
+    <tab type="user" url="../../../lib/stm32f767zi/doc/doxygen/html/index.html" title="STM32F767ZI"/>
     <tab type="namespaces" visible="no" title="">
       <tab type="namespacelist" visible="no" title="" intro=""/>
       <tab type="namespacemembers" visible="no" title="" intro=""/>

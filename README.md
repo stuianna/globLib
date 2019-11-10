@@ -58,3 +58,33 @@ This whole repository should be cloned onto a local machine to function correctl
 
 Each supported MCU has a templates containing a project template and specific 
 instructions for its usage. These are located in under each MCU name.
+
+# Testing
+
+This document outlines which modules components have and haven't been tested.
+
+## STM32F767
+
+Currently being developed on a STM32Nucleo144 board.
+
+### GPIO
+
+Tested:
+
+- GPIO_pinSetup(), pinWrite(), pinToggle() and pinSet() for digital output on
+    - PB0, PB7 and PB14
+- GPIO_pinSetup(), pinRead() for digital input on
+    - PC13
+- GPIO_pinSetup() for USART on: 
+   - PD8 and PD9.
+- Rising edge and falling edge interrupts on PC13
+
+### USART
+
+- USART_setup(), USART_put() and USART_get() on:
+    - USART3C (PD8 and PD9)
+
+### RCC
+
+- RCC_clockEnable() for: 
+    - GPIOB, GPIOC GPIOD, USART3, SYSCFG.
