@@ -1,14 +1,15 @@
-# Documentation main folder
+# Main Documentation Directory
 doc/doxygen/html
 
-# Common library
+# Common libraries
 lib/common/doc/doxygen/html
 
 # stm32f767zi library
 lib/stm32f767zi/doc/doxygen/html
 lib/stm32f767zi/obj
+lib/stm32f767zi/lib/libstm32f767zi.a
 
-# Templates
-templates/stm32f767zi/bin
-templates/stm32f767zi/obj
+# template directory
+template/stm32f767zi/bin
+template/stm32f767zi/obj
 
