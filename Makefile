@@ -1,7 +1,7 @@
 
-all: docs stm32f767zi
+all: docs stm32f767zi templates
 
-clean: cleandoc cleanstm32f767zi
+clean: cleandoc cleanstm32f767zi cleantemplates
 
 stm32f767zi:
 	@echo -e "\033[0;32m[Compiling STM32F767ZI Library]\033[0m"
@@ -9,6 +9,13 @@ stm32f767zi:
 
 cleanstm32f767zi:
 	@cd lib/stm32f767zi; make clean;
+
+templates:
+	@echo -e "\033[0;32m[Compiling STM32F767ZI Template]\033[0m"
+	@cd template/stm32f767zi; make
+
+cleantemplates:
+	@cd template/stm32f767zi; make clean
 
 docs:
 	@echo -e "\033[0;32m[Compiling Doxygen Documentation]\033[0m"
