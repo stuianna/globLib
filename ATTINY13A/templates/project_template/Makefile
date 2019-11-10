@@ -17,7 +17,7 @@ CLOCK = 9600000
 CFLAGS = -std=gnu11 -Wall -ffunction-sections -fdata-sections -Os -fshort-enums  -flto
 LFLAGS = --gc-sections,--flto #Linker arguments should be comma separated
 
-GLOB_LIB= 
+GLOB_LIB= /home/stuart/Dropbox/git/globLib
 
 ### 
 #Shouldn't need to change from here down

@@ -1,0 +1,9 @@
+doc/doxygen/html
+common/doc/doxygen/html
+STM32F103CB/lib/*.o
+STM32F103CB/templates/stlink_project_template/bin
+STM32F103CB/templates/stlink_project_template/obj
+STM32F103CB/templates/stlink_project_template/doc/html
+STM32F103CB/templates/bootloader_project_template/doc/html
+common/lib/*.o
+

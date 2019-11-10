@@ -4,7 +4,7 @@
 TARGET = Project
 
 #Absolute path the the globLib root directory
-GLOB_LIB= 
+GLOB_LIB= /home/stuart/Dropbox/git/globLib
 
 ##Compiler options
 
@@ -127,3 +127,5 @@ cleandoc:
 usbReset:
 #This script resets the USB device if it exists, this saves disconnecting and reconnecting the device
 	($(GLOB_LIB)/STM32F103CB/tools/usbResetstm32f1 $(GLOB_LIB))
+
+print-%  : ; @echo $* = $($*)

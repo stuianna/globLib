@@ -4,7 +4,7 @@
 TARGET = STM32F1_USB_bootloader
 
 #Absolute path the the globLib root directory
-GLOB_LIB= 
+GLOB_LIB= /home/stuart/Dropbox/git/globLib
 
 ##Compiler options
 

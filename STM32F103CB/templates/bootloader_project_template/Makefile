@@ -4,7 +4,7 @@
 TARGET = Project
 
 #Absolute path the the globLib root directory
-GLOB_LIB= 
+GLOB_LIB= /home/stuart/Dropbox/git/globLib
 
 ##Compiler options
 
