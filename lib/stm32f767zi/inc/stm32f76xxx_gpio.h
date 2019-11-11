@@ -8,7 +8,7 @@
 
 /*! 
     @addtogroup GPIO
-    @details Module for low level GPIO access.
+    @brief Module for low level GPIO access.
     @author Stuart Ianna
     @date November 2019
     @warning Partly tested, see repository readme for details. 
@@ -90,7 +90,7 @@ typedef enum{
 /*! 
     @brief Setup a GPIO pin for a given function
     @details This function is also employed by other modules to configure pins and ports.
-    @param mode The mode for the pin to operate, defined by #gpio_mode
+    @param mode The mode for the pin to operate, defined by #GPIO_Mode
     @param port The port of the MCU, GPIOA, GPIOB etc..
     @param pin The numbered pin of the port.
     @return none.
@@ -143,7 +143,7 @@ bool GPIO_pinRead(GPIO_TypeDef *port, uint8_t pin);
     on Vdd and loading.
     @param port The port of the MCU, GPIOA, GPIOB etc.
     @param pin The numbered pin of the port.
-    @param speed Output speed defined by #Gpio_Speed
+    @param speed Output speed defined by #GPIO_Speed
     @return SUCCESS or ERROR.
 */
 bool GPIO_speed(GPIO_TypeDef *port, uint8_t pin, GPIO_Speed speed);
@@ -152,7 +152,7 @@ bool GPIO_speed(GPIO_TypeDef *port, uint8_t pin, GPIO_Speed speed);
     @details Default state is no pull-up or pull-down.
     @param port The port of the MCU, GPIOA, GPIOB etc.
     @param pin The numbered pin of the port.
-    @param type Input type defined by #Gpio_Pupd.
+    @param type Input type defined by #GPIO_Pupd.
     @return SUCCESS or ERROR.
 */
 bool GPIO_pupd(GPIO_TypeDef *port, uint8_t pin, GPIO_Pupd type);
@@ -161,13 +161,13 @@ bool GPIO_pupd(GPIO_TypeDef *port, uint8_t pin, GPIO_Pupd type);
     @details Default state is push-pull.
     @param port The port of the MCU, GPIOA, GPIOB etc.
     @param pin The numbered pin of the port.
-    @param type output type defined by #Gpio_Output_Type.
+    @param type output type defined by #GPIO_Output_Type.
     @return SUCCESS or ERROR.
 */
 bool GPIO_oType(GPIO_TypeDef *port, uint8_t pin, GPIO_Output_Type type);
 /*! 
     @brief Set the function called when an ISR occurs on a given pin
-    @details Interrupts must have been previously enabled on the pin with function #ISREnable
+    @details Interrupts must have been previously enabled on the pin with function #GPIO_ISREnable
     @param pin The numbered pin of the port.
     @param handler The function to call on interrupt occurance.
     @return none
@@ -179,7 +179,7 @@ bool GPIO_setHandler(uint8_t pin, void (*handler)(void));
     pin 2 cannot have an interrupt on port A and B, false is return if this is attempted.
     @param port The port of the MCU, GPIOA, GPIOB etc.
     @param pin The numbered pin of the port.
-    @param trigger The interrupt trigger, define by #Gpio_Isr
+    @param trigger The interrupt trigger, define by #GPIO_Isr
     @param handle Pointer to the function to be called on interrupt event.
     @return none
 */

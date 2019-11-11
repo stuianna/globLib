@@ -32,6 +32,7 @@ docs:
 	@cd doc/doxygen; doxygen doxy
 	@cd lib/stm32f767zi/doc/doxygen; doxygen doxy
 	@cd lib/common/doc/doxygen; doxygen doxy
+	@echo -e "\033[0;32m[Done]\033[0m"
 
 cleandoc:
 	@rm -rf doc/doxygen/html

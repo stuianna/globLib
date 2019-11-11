@@ -42,13 +42,13 @@ typedef enum{
 
 /*! 
     @brief Enables a given peripheral clock.
-    @param peripheral The clock to enable, defined by #RCC_Peripherals
+    @param peripheral The clock to enable, defined by #RCC_Peripheral
     @return SUCCESS if enable, FAIL if not.
 */
 bool clockEnable(RCC_Peripheral peripheral);
 /*! 
     @brief Disables a given peripheral clock.
-    @param peripheral The clock to disable, defined by #RCC_Peripherals
+    @param peripheral The clock to disable, defined by #RCC_Peripheral
     @return SUCCESS if enable, FAIL if not.
 */
 bool clockDisable(RCC_Peripheral peripheral);
