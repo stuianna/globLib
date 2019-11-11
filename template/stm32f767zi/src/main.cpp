@@ -12,9 +12,8 @@ int main(void){
 
     while(1){
 
-        delayMs(300);
+        delayMs(500);
         GPIO_pinToggle(LED_PORT,LED_PIN);
-
     }
 }
 

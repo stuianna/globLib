@@ -12,7 +12,7 @@ SRCDIR=src
 LIBDIR=lib
 OBJDIR=obj
 
-GLOB_LIB=/home/stuart/Dropbox/git/globLib_mk2/
+GLOB_LIB=/home/stuart/Dropbox/git/globLib_mk2
 
 # Startup File
 # Choose the correct one from lib/CMSIS/startup
@@ -43,8 +43,8 @@ ARM_STATIC_LIB=arm_cortexM7l_math
 DEFS += -DARM_MATH_CM7
 LDFLAGS+= --specs=nano.specs -L$(ARM_LIB_DIR) -l$(ARM_STATIC_LIB) 
 
-INCDIR+=$(GLOB_LIB)lib/stm32f767zi/inc
-GLOB_LIB_DIR=$(GLOB_LIB)lib/stm32f767zi/lib
+INCDIR+=$(GLOB_LIB)/lib/stm32f767zi/inc
+GLOB_LIB_DIR=$(GLOB_LIB)/lib/stm32f767zi/lib
 GLOB_LIB_LIB=stm32f767zi
 
 LDFLAGS+= -L$(GLOB_LIB_DIR) -l$(GLOB_LIB_LIB)

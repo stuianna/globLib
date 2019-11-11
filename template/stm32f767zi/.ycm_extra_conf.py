@@ -5,10 +5,14 @@ import logging
 import ycm_core
 import re
 
+#This variable is overwritten by tools/config.sh
+GLOBLIB="/home/stuart/Dropbox/git/globLib_mk2"
+
 C_BASE_FLAGS = [
         '-Wall',
         '-Wextra',
-        '-Ilib/stm32f76xxx/',
+        '-I' + GLOBLIB + '/lib/stm32f767zi/inc',
+        '-I' + GLOBLIB + '/lib/stm32f767zi/inc/CMSIS',
         '-Iinc/CMSIS'
         ]
 
@@ -17,7 +21,8 @@ CPP_BASE_FLAGS = [
         '-Wextra',
         '-ferror-limit=10000',
         '-std=c++11',
-        '-Ilib/stm32f76xxx',
+        '-I' + GLOBLIB + '/lib/stm32f767zi/inc',
+        '-I' + GLOBLIB + '/lib/stm32f767zi/inc/CMSIS',
         '-Iinc/CMSIS'
         ]
 
@@ -31,7 +36,7 @@ CPP_SOURCE_EXTENSIONS = [
 
 SOURCE_DIRECTORIES = [
         'src',
-        'lib/stm32f103xb'
+        'lib'
         ]
 
 HEADER_EXTENSIONS = [
@@ -41,7 +46,8 @@ HEADER_EXTENSIONS = [
 
 HEADER_DIRECTORIES = [
         'inc/CMSIS',
-        'lib/stm32f103xb/'
+        GLOBLIB + '/lib/stm32f767zi/inc',
+        GLOBLIB + '/lib/stm32f767zi/inc/CMSIS'
         ]
 
 BUILD_DIRECTORY = 'bin';
