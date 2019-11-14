@@ -17,6 +17,8 @@
     - 8 bit data frame
     - No parity
 
+    The standard setup includes pre-configured for RX and TX with echo on character reception. The standared ISRs can be overriden for other functions. See examples.
+
     @author Stuart Ianna
     @date November 2019
     @warning Partly tested, see repository readme for details. 
@@ -37,6 +39,11 @@
     @details These values are used with function USART_setup()
 */
 typedef enum{
+    USART_1A,                                   //!<USART 1, RX = PA10, TX = PA09
+    USART_1B,                                   //!<USART 1, RX = PB07, TX = PB06
+    USART_1C,                                   //!<USART 1, RX = PB15, TX = PB14
+    USART_2A,                                   //!<USART 2, RX = PA03, TX = PA02
+    USART_2B,                                   //!<USART 2, RX = PD06, TX = PD05
     USART_3A,                                   //!<USART 3, RX = PB11, TX = PB10
     USART_3B,                                   //!<USART 3, RX = PC11, TX = PC10
     USART_3C,                                   //!<USART 3, RX = PD09, TX = PD08
@@ -56,6 +63,7 @@ typedef enum{
     USART_BAUD_230400   = 230400,               //!<Baud rate of 230400
     USART_BAUD_460800   = 460800,               //!<Baud rate of 460800
     USART_BAUD_921600   = 921600,               //!<Baud rate of 921600
+    USART_BAUD_1843200  = 1843200,              //!<Baud rate of 1843200 
 }USART_Baud;
 
 /*! 
@@ -85,6 +93,7 @@ typedef enum{
 typedef enum{
     USART_RX            = 0x00,                 //!<Receive interrupts 
     USART_TX            = 0x01,                 //!<Transmit interrupts
+    USART_BOTH          = 0x02,                 //!<Receive and transmit interrupts
 }USART_Isr;
 
 /*! 
@@ -153,7 +162,37 @@ bool USART_setStop(USART_TypeDef *peripheral, USART_Stop stop);
     @return SUCCESS or ERROR.
 */
 bool USART_setBaud(USART_TypeDef *peripheral, USART_Baud baud);
-
+/*! 
+    @brief Enable USART ISR
+    @details USART RX and TX ISRs are enabled by default, this function can be used to change the ISR type. For instance, calling this function with USART_TX would disable the RX ISR.
+    @param peripheral The USART peripheral to modify.
+    @param isrType  The type of interrupt to enable. Note the alternate ISR type is disabled.
+    @return SUCCESS or ERROR.
+*/
+bool USART_enableISR(USART_TypeDef *peripheral, USART_Isr isrType);
+/*! 
+    @brief Disables both RX and TX ISR for the given USART port.
+    @details 
+    @param peripheral The USART peripheral to modify.
+    @return SUCCESS or ERROR.
+*/
+bool USART_disableISR(USART_TypeDef *peripheral);
+/*! 
+    @brief Set the recieve ISR of the given peripheral to a handler (function)
+    @details ISRs should be enabled for this to work.
+    @param peripheral The USART peripheral to modify.
+    @param new_handler Function pointer to be caler on RX received event.
+    @return SUCCESS or ERROR.
+*/
+bool USART_setRxISR(USART_TypeDef *peripheral,void (*new_handler)(uint8_t byte));
+/*! 
+    @brief Set the transmit ISR of the given peripheral to a handler (function)
+    @details ISRs should be enabled for this to work.
+    @param peripheral The USART peripheral to modify.
+    @param new_handler Function pointer to be caler on TX complete event.
+    @return SUCCESS or ERROR.
+*/
+bool USART_setTxISR(USART_TypeDef *peripheral,void (*new_handler)(void));
 
 /**@}*/
 /**@}*/

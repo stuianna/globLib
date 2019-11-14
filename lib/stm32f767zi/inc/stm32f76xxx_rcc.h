@@ -37,6 +37,8 @@ typedef enum{
     RCC_GPIOJ       = RCC_AHB1ENR_GPIOJEN,          //!<GPIOJ Clock
     RCC_GPIOK       = RCC_AHB1ENR_GPIOKEN,          //!<GPIOK Clock
     RCC_SYSCFG      = RCC_APB2ENR_SYSCFGEN,         //!<System configuration clock.
+    RCC_USART1      = RCC_APB2ENR_USART1EN,         //!<USART 1 clock
+    RCC_USART2      = RCC_APB1ENR_USART2EN,         //!<USART 2 clock
     RCC_USART3      = RCC_APB1ENR_USART3EN,         //!<USART 3 clock
 }RCC_Peripheral;
 

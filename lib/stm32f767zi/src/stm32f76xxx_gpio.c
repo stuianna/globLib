@@ -64,12 +64,39 @@ bool GPIO_pinSetup(GPIO_Mode mode, GPIO_TypeDef *port, uint8_t pin){
 
     if(port == GPIOA){
         clockEnable(RCC_GPIOA);
-        port->MODER |= (mode << pin*2);
-
+        switch(mode){
+            case GPIO_UART_TX:  GPIO_setAlternateFunction(port,pin,7);   break;
+            case GPIO_UART_RX:  GPIO_setAlternateFunction(port,pin,7);   break;
+            case GPIO_DI:       port->MODER |= (GPIO_DI << pin * 2);   break;
+            case GPIO_DO:       port->MODER |= (GPIO_DO << pin * 2);   break;
+            case GPIO_ADC:      port->MODER |= (GPIO_ADC << pin * 2);   break;
+            default:            port->MODER |= (GPIO_ADC << pin * 2);   break;
+        }
     }
     else if(port == GPIOB){
         clockEnable(RCC_GPIOB);
-        port->MODER |= (mode << pin*2);
+        switch(mode){
+            case GPIO_UART_TX:  
+                if(pin == 14){
+                    GPIO_setAlternateFunction(port,pin,4);
+                }
+                else{
+                    GPIO_setAlternateFunction(port,pin,7);   
+                }
+                break;
+            case GPIO_UART_RX:
+                if(pin == 15){
+                    GPIO_setAlternateFunction(port,pin,4);   
+                }
+                else{
+                    GPIO_setAlternateFunction(port,pin,7);   
+                }
+                break;
+            case GPIO_DI:       port->MODER |= (GPIO_DI << pin * 2);   break;
+            case GPIO_DO:       port->MODER |= (GPIO_DO << pin * 2);   break;
+            case GPIO_ADC:      port->MODER |= (GPIO_ADC << pin * 2);   break;
+            default:            port->MODER |= (GPIO_ADC << pin * 2);   break;
+        }
     }
     else if(port == GPIOC){
         clockEnable(RCC_GPIOC);
