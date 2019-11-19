@@ -24,6 +24,17 @@
     @warning Partly tested, see repository readme for details. 
     @todo
 
+    @par USART echo back test program.
+    @include example_usart_echo.cpp
+
+    @par USART blocking read and write example
+    @include example_usart_blocking.cpp
+
+    @par USART with overriden ISR.
+    @include example_usart_isr.cpp
+
+    @par USART with extra configuration.
+    @include example_usart_config.cpp
   @{
 */
 
