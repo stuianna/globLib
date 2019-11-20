@@ -47,7 +47,13 @@ INCDIR+=$(GLOB_LIB)/lib/stm32f767zi/inc
 GLOB_LIB_DIR=$(GLOB_LIB)/lib/stm32f767zi/lib
 GLOB_LIB_LIB=stm32f767zi
 
-LDFLAGS+= -L$(GLOB_LIB_DIR) -l$(GLOB_LIB_LIB)
+# Common Library include
+INCDIR+=$(GLOB_LIB)/lib/common/inc
+INCDIR+=$(GLOB_LIB)/lib/common/printf			# Extra so submodule can be used
+COMMON_LIB_DIR=$(GLOB_LIB)/lib/common/lib
+COMMON_LIB_LIB=common_stm32f767zi
+
+LDFLAGS+= -L$(GLOB_LIB_DIR) -l$(GLOB_LIB_LIB) -L$(COMMON_LIB_DIR) -l$(COMMON_LIB_LIB)
 
 # MCU FLAGS -> These can be found by sifting through openocd makefiles
 # Shouldn't need to be changed over the stm32f1xx family

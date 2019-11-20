@@ -1,7 +1,7 @@
 
-all: config docs stm32f767zi templates
+all: config submodules docs stm32f767zi common templates
 
-clean: cleandoc cleanstm32f767zi cleantemplates noconfig
+clean: cleandoc cleanstm32f767zi cleancommon cleantemplates noconfig
 
 # Config
 config:
@@ -9,6 +9,20 @@ config:
 
 noconfig:
 	@tools/noconfig.sh
+
+# Submodules
+submodules:
+	@git submodule init
+	@git submodule update
+
+
+# Common Static Libraries
+common:
+	@echo -e "\033[0;32m[Compiling Static Libraries]\033[0m"
+	@cd lib/common; make;
+
+cleancommon:
+	@cd lib/common; make clean;
 
 # MCU Static Libraries
 stm32f767zi:
@@ -32,7 +46,6 @@ docs:
 	@cd doc/doxygen; doxygen doxy
 	@cd lib/stm32f767zi/doc/doxygen; doxygen doxy
 	@cd lib/common/doc/doxygen; doxygen doxy
-	@echo -e "\033[0;32m[Done]\033[0m"
 
 cleandoc:
 	@rm -rf doc/doxygen/html

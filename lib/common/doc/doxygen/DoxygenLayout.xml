@@ -6,7 +6,7 @@
     <tab type="user" url="../../../../../doc/doxygen/html/index.html" visible="yes" title="Main Page"/>
     <tab type="user" url="index.html" title="Common"/>
     <tab type="user" url="../../../../stm32f767zi/doc/doxygen/html/index.html" title="STM32F767ZI"/>
-    <tab type="pages" visible="no" title="" intro=""/>
+    <tab type="pages" visible="yes" title="" intro=""/>
     <tab type="modules" visible="yes" title="" intro=""/>
     <tab type="namespaces" visible="no" title="">
       <tab type="namespacelist" visible="no" title="" intro=""/>
