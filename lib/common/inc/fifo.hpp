@@ -24,8 +24,20 @@
     @author Stuart Ianna
     @date Novamber 2019
     @warning FIFO memory buffer size must be a exponention power of 2 (2,4,8,16 ..)
-    @par ISR Rising edge example
-    @include example_gpio_isr.cpp
+
+    @par Example of using FIFO to overcome blocking TX (at low baud rates) and usart.
+		In the example, the byte are taken from the FIFO buffer automattically using the
+		UART TX ISR.
+    @include example_fifo_usartTX.cpp
+
+		@par Example of using FIFO for USART RX.
+		The contents of the fifo are retreived after 4 bytes are available.
+    @include example_fifo_usartRX.cpp
+
+		@par Example of using FIFO for USART TX in combination with printf.
+		The FIFO template is also used for a structre type, making a nested
+		FIFO setup.
+    @include example_fifo_multiple.cpp
   @{
 */
 
@@ -66,15 +78,15 @@ public:
 		is already full.
     @return The size of the buffer after the item was added.
 */
-	uint16_t put(T in);
+	void put(T in);
 /*!
     @brief Send the next item to the output function.
-    @return The size of the buffer after the item was retreived.
+    @return None
 */
-	uint16_t get();
+	void get();
 /*!
     @brief Get the current size used in the buffer
-    @return The size of the buffer.
+    @return None
 */
 	uint16_t size();
 /*!
@@ -114,17 +126,17 @@ cFIFO<T>::cFIFO(T *buffer, Fifo_Mode mode, uint16_t size, void (*output)(T)){
 template<typename T>
 void cFIFO<T>::reset (void){
 
-	this->head = 0;
-	this->tail = 0;
+	this->head = 1;
+	this->tail = 1;
 	this->idle = true;
 }
 
 template<typename T>
-uint16_t cFIFO<T>::put(T in){
+void cFIFO<T>::put(T in){
 
 	if((this->head) == ((this->tail-1) & this->mask)){
 
-		return this->mask;
+		return;
 	}
 
 	this->buffer[this->head++] = in;
@@ -133,27 +145,25 @@ uint16_t cFIFO<T>::put(T in){
 	if((this->idle) && (this->mode == FIFO_MODE_AUTO)){
 		this->get();
 	}
-	return this->size();
 }
 
 template<typename T>
-uint16_t cFIFO<T>::get(){
+void cFIFO<T>::get(){
 
 	if(this->head == this->tail){
 		this->idle = true;
-		return 0;
+		return;
 	}
 	this->idle = false;
 
 	this->output(this->buffer[this->tail++]);
 	this->tail = (this->tail & this->mask);
-	return this->size();
 }
 
 template<typename T>
 uint16_t cFIFO<T>::size(){
 
-	return (this->head-this->tail)<0?(this->tail-this->head):(this->head-this->tail);
+	return (this->head - this->tail) & this->mask;
 }
 
 template<typename T>
