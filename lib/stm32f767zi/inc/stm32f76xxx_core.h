@@ -15,6 +15,7 @@ extern "C" {
 #include "stm32f76xxx_gpio.h"
 #include "stm32f76xxx_usart.h"
 #include "stm32f76xxx_systick.h"
+#include "stm32f76xxx_flash.h"
 
 #ifdef __cplusplus
 }
