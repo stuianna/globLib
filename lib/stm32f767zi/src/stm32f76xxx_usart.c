@@ -21,72 +21,72 @@ bool USART_setup(USART_Varient variant){
 
     // Map the variant to an actual port
     switch(variant){
-        case USART_1A:  
+        case USART_1A:
             GPIO_pinSetup(GPIO_UART_RX,GPIOA,10);
             GPIO_pinSetup(GPIO_UART_TX,GPIOA,9);
-            peripheral = USART1; 
-            clockEnable(RCC_USART1);
+            peripheral = USART1;
+            RCC_clockEnable(RCC_USART1);
             USART_setRxISR(peripheral,usart1_default_rx_isr);
             USART_setTxISR(peripheral,usart1_default_tx_isr);
             break;
-        case USART_1B:  
+        case USART_1B:
             GPIO_pinSetup(GPIO_UART_RX,GPIOB,7);
             GPIO_pinSetup(GPIO_UART_TX,GPIOB,6);
-            peripheral = USART1; 
-            clockEnable(RCC_USART1);
+            peripheral = USART1;
+            RCC_clockEnable(RCC_USART1);
             USART_setRxISR(peripheral,usart1_default_rx_isr);
             USART_setTxISR(peripheral,usart1_default_tx_isr);
             break;
-        case USART_1C:  
+        case USART_1C:
             GPIO_pinSetup(GPIO_UART_RX,GPIOB,15);
             GPIO_pinSetup(GPIO_UART_TX,GPIOB,14);
-            peripheral = USART1; 
-            clockEnable(RCC_USART1);
+            peripheral = USART1;
+            RCC_clockEnable(RCC_USART1);
             USART_setRxISR(peripheral,usart1_default_rx_isr);
             USART_setTxISR(peripheral,usart1_default_tx_isr);
             break;
-        case USART_2A:  
+        case USART_2A:
             GPIO_pinSetup(GPIO_UART_RX,GPIOA,3);
             GPIO_pinSetup(GPIO_UART_TX,GPIOA,2);
-            peripheral = USART2; 
-            clockEnable(RCC_USART2);
+            peripheral = USART2;
+            RCC_clockEnable(RCC_USART2);
             USART_setRxISR(peripheral,usart2_default_rx_isr);
             USART_setTxISR(peripheral,usart2_default_tx_isr);
             break;
-        case USART_2B:  
+        case USART_2B:
             GPIO_pinSetup(GPIO_UART_RX,GPIOD,6);
             GPIO_pinSetup(GPIO_UART_TX,GPIOD,5);
-            peripheral = USART2; 
-            clockEnable(RCC_USART2);
+            peripheral = USART2;
+            RCC_clockEnable(RCC_USART2);
             USART_setRxISR(peripheral,usart2_default_rx_isr);
             USART_setTxISR(peripheral,usart2_default_tx_isr);
             break;
-        case USART_3A:  
+        case USART_3A:
             GPIO_pinSetup(GPIO_UART_RX,GPIOB,11);
             GPIO_pinSetup(GPIO_UART_TX,GPIOB,10);
-            peripheral = USART3; 
-            clockEnable(RCC_USART3);
+            peripheral = USART3;
+            RCC_clockEnable(RCC_USART3);
             USART_setRxISR(peripheral,usart3_default_rx_isr);
             USART_setTxISR(peripheral,usart3_default_tx_isr);
             break;
-        case USART_3B:  
+        case USART_3B:
             GPIO_pinSetup(GPIO_UART_RX,GPIOC,11);
             GPIO_pinSetup(GPIO_UART_TX,GPIOC,10);
-            peripheral = USART3; 
-            clockEnable(RCC_USART3);
+            peripheral = USART3;
+            RCC_clockEnable(RCC_USART3);
             USART_setRxISR(peripheral,usart3_default_rx_isr);
             USART_setTxISR(peripheral,usart3_default_tx_isr);
             break;
-        case USART_3C:  
+        case USART_3C:
             GPIO_pinSetup(GPIO_UART_RX,GPIOD,9);
             GPIO_pinSetup(GPIO_UART_TX,GPIOD,8);
-            peripheral = USART3; 
-            clockEnable(RCC_USART3);
+            peripheral = USART3;
+            RCC_clockEnable(RCC_USART3);
             USART_setRxISR(peripheral,usart3_default_rx_isr);
             USART_setTxISR(peripheral,usart3_default_tx_isr);
             break;
-        default:        
-            return ERROR; 
+        default:
+            return ERROR;
             break;
     }
 
@@ -147,7 +147,15 @@ bool USART_setStop(USART_TypeDef *peripheral, USART_Stop stop){
 bool USART_setBaud(USART_TypeDef *peripheral, USART_Baud baud){
 
     bool enabled = peripheral->CR1 & USART_CR1_UE;
-    peripheral->BRR = (uint32_t)(SystemCoreClock / baud);
+
+		// USART 1 and 6 are clocked from a (possibly) faster bus
+		if((peripheral == USART1) || (peripheral == USART6)){
+			peripheral->BRR = (uint32_t)(RCC_getClockSpeed(RCC_APB2_PERIPHERAL)/ baud);
+
+		}else{
+
+			peripheral->BRR = (uint32_t)(RCC_getClockSpeed(RCC_APB1_PERIPHERAL)/ baud);
+		}
     peripheral->CR1 |= enabled ? USART_CR1_UE : 0;
     return SUCCESS;
 }
