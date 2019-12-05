@@ -259,7 +259,10 @@ uint32_t RCC_getClockSpeed(Rcc_Clock clock){
 
 		case RCC_APB1_TIMER:
 
-			if((((RCC->CFGR & RCC_CFGR_PPRE1_Msk) >> RCC_CFGR_PPRE1_Pos)) - 3){
+			if(!(RCC->CFGR & RCC_CFGR_PPRE1_Msk)){
+				return SystemCoreClock;
+			}
+			else if((((RCC->CFGR & RCC_CFGR_PPRE1_Msk) >> RCC_CFGR_PPRE1_Pos)) - 3){
 				return 2*SystemCoreClock >> ((((RCC->CFGR & RCC_CFGR_PPRE1_Msk) >> RCC_CFGR_PPRE1_Pos)) - 3);
 			}
 			return SystemCoreClock >> ((((RCC->CFGR & RCC_CFGR_PPRE1_Msk) >> RCC_CFGR_PPRE1_Pos)) - 3);
@@ -273,7 +276,10 @@ uint32_t RCC_getClockSpeed(Rcc_Clock clock){
 
 		case RCC_APB2_TIMER:
 
-			if((((RCC->CFGR & RCC_CFGR_PPRE2_Msk) >> RCC_CFGR_PPRE2_Pos)) - 3){
+			if(!(RCC->CFGR & RCC_CFGR_PPRE2_Msk)){
+				return SystemCoreClock;
+			}
+			else if((((RCC->CFGR & RCC_CFGR_PPRE2_Msk) >> RCC_CFGR_PPRE2_Pos)) - 3){
 				return 2*SystemCoreClock >> ((((RCC->CFGR & RCC_CFGR_PPRE2_Msk) >> RCC_CFGR_PPRE2_Pos)) - 3);
 			}
 			return SystemCoreClock >> ((((RCC->CFGR & RCC_CFGR_PPRE2_Msk) >> RCC_CFGR_PPRE2_Pos)) - 3);
