@@ -21,9 +21,11 @@
 		clock configuration structure.
 
     @author Stuart Ianna
-    @date November 2019
-    @warning none
-    @todo
+    @date December 2019
+
+    @par Example of changing the system clock speed.
+    @include example_rcc_systemClock.cpp
+
   @{
 */
 
