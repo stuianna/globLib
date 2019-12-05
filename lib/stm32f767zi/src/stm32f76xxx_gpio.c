@@ -60,10 +60,10 @@ bool GPIO_setHandler(uint8_t num, void (*handler)(void)){
 }
 
 bool GPIO_pinSetup(GPIO_Mode mode, GPIO_TypeDef *port, uint8_t pin){
-    
+
 
     if(port == GPIOA){
-        clockEnable(RCC_GPIOA);
+        RCC_clockEnable(RCC_GPIOA);
         switch(mode){
             case GPIO_UART_TX:  GPIO_setAlternateFunction(port,pin,7);   break;
             case GPIO_UART_RX:  GPIO_setAlternateFunction(port,pin,7);   break;
@@ -74,22 +74,22 @@ bool GPIO_pinSetup(GPIO_Mode mode, GPIO_TypeDef *port, uint8_t pin){
         }
     }
     else if(port == GPIOB){
-        clockEnable(RCC_GPIOB);
+        RCC_clockEnable(RCC_GPIOB);
         switch(mode){
-            case GPIO_UART_TX:  
+            case GPIO_UART_TX:
                 if(pin == 14){
                     GPIO_setAlternateFunction(port,pin,4);
                 }
                 else{
-                    GPIO_setAlternateFunction(port,pin,7);   
+                    GPIO_setAlternateFunction(port,pin,7);
                 }
                 break;
             case GPIO_UART_RX:
                 if(pin == 15){
-                    GPIO_setAlternateFunction(port,pin,4);   
+                    GPIO_setAlternateFunction(port,pin,4);
                 }
                 else{
-                    GPIO_setAlternateFunction(port,pin,7);   
+                    GPIO_setAlternateFunction(port,pin,7);
                 }
                 break;
             case GPIO_DI:       port->MODER |= (GPIO_DI << pin * 2);   break;
@@ -99,11 +99,11 @@ bool GPIO_pinSetup(GPIO_Mode mode, GPIO_TypeDef *port, uint8_t pin){
         }
     }
     else if(port == GPIOC){
-        clockEnable(RCC_GPIOC);
+        RCC_clockEnable(RCC_GPIOC);
         port->MODER |= (mode << pin*2);
     }
     else if(port == GPIOD){
-        clockEnable(RCC_GPIOD);
+        RCC_clockEnable(RCC_GPIOD);
         switch(mode){
             case GPIO_UART_TX:  GPIO_setAlternateFunction(port,pin,7);   break;
             case GPIO_UART_RX:  GPIO_setAlternateFunction(port,pin,7);   break;
@@ -114,31 +114,31 @@ bool GPIO_pinSetup(GPIO_Mode mode, GPIO_TypeDef *port, uint8_t pin){
         }
     }
     else if(port == GPIOE){
-        clockEnable(RCC_GPIOE);
+        RCC_clockEnable(RCC_GPIOE);
         port->MODER |= (mode << pin*2);
     }
     else if(port == GPIOF){
-        clockEnable(RCC_GPIOF);
+        RCC_clockEnable(RCC_GPIOF);
         port->MODER |= (mode << pin*2);
     }
     else if(port == GPIOG){
-        clockEnable(RCC_GPIOG);
+        RCC_clockEnable(RCC_GPIOG);
         port->MODER |= (mode << pin*2);
     }
     else if(port == GPIOH){
-        clockEnable(RCC_GPIOH);
+        RCC_clockEnable(RCC_GPIOH);
         port->MODER |= (mode << pin*2);
     }
     else if(port == GPIOI){
-        clockEnable(RCC_GPIOI);
+        RCC_clockEnable(RCC_GPIOI);
         port->MODER |= (mode << pin*2);
     }
     else if(port == GPIOJ){
-        clockEnable(RCC_GPIOJ);
+        RCC_clockEnable(RCC_GPIOJ);
         port->MODER |= (mode << pin*2);
     }
     else if(port == GPIOK){
-        clockEnable(RCC_GPIOK);
+        RCC_clockEnable(RCC_GPIOK);
         port->MODER |= (mode << pin*2);
     }
     else{
@@ -164,7 +164,7 @@ void GPIO_pinHigh(GPIO_TypeDef *port, uint8_t pin){
 }
 
 void GPIO_pinLow(GPIO_TypeDef *port, uint8_t pin){
-    
+
     SET_BIT(port->BSRR,0x1<<(pin+16));
     return;
 }
@@ -229,8 +229,8 @@ bool GPIO_pupd(GPIO_TypeDef *port, uint8_t pin, GPIO_Pupd type){
 
 bool GPIO_ISREnable(GPIO_TypeDef *port, uint8_t pin, GPIO_Isr trigger, void (*handle)(void)){
 
-    clockEnable(RCC_SYSCFG);
-    
+    RCC_clockEnable(RCC_SYSCFG);
+
     // Check if the pin is available
     if((EXTI->IMR & pin)){
         return ERROR;
@@ -353,7 +353,7 @@ bool GPIO_ISRDisable(GPIO_TypeDef *port,uint8_t  pin){
         return ERROR;
     }
     return SUCCESS;
-   
+
 }
 
 bool GPIO_setEXTIPortMask(uint8_t pin, uint8_t mask, void (*handle)(void)){
