@@ -10,6 +10,11 @@ lib/stm32f767zi/obj
 lib/stm32f767zi/lib/libstm32f767zi.a
 
 # template directory
-template/stm32f767zi/bin
-template/stm32f767zi/obj
+template/stm32f767zi/bare/bin
+template/stm32f767zi/freeRTOS/obj
 
+working/
+freeRTOS/
+tags
+.ycm_extra_conf.py
+todo

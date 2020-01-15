@@ -50,10 +50,11 @@ GLOB_LIB_LIB=stm32f767zi
 
 # Common Library include
 INCDIR+=$(GLOB_LIB)/lib/common/inc
-INCDIR+=$(GLOB_LIB)/lib/common/printf			# Extra so submodule can be used
+INCDIR+=$(GLOB_LIB)/lib/common/printf						# Extra so submodule can be used
+INCDIR+=$(GLOB_LIB)/lib/common/freeRTOS/inc			# Custom freeRTOS libraries
 COMMON_LIB_DIR=$(GLOB_LIB)/lib/common/lib
 COMMON_LIB_LIB=common_stm32f767zi
-
+FREERTOS_LIB=$(GLOB_LIB)/lib/common/freeRTOS/src
 LDFLAGS+= -L$(GLOB_LIB_DIR) -l$(GLOB_LIB_LIB) -L$(COMMON_LIB_DIR) -l$(COMMON_LIB_LIB)
 
 # MCU FLAGS -> These can be found by sifting through openocd makefiles
@@ -76,6 +77,9 @@ A2L=arm-none-eabi-addr2line
 ASOURCES=$(LIBDIR)/CMSIS/startup/$(STARTUP)
 CSOURCES=$(shell find -L $(SRCDIR) $(LIBDIR) -name '*.c')
 CPPSOURCES=$(shell find -L $(SRCDIR) $(LIBDIR) -name '*.cpp')
+
+# Source files for custom RTOS libraries
+CSOURCES+=$(shell find -L $(FREERTOS_LIB) -name '*.c')
 
 # Find header directories
 INC=$(shell find -L $(INCDIR) -name '*.h' -exec dirname {} \; | uniq)

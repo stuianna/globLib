@@ -832,6 +832,8 @@ WARN_LOGFILE           =
 INPUT                  = ../../readme.md \
                          ../../src/ \
                          ../../inc/ \
+                         ../../freeRTOS/inc/ \
+                         ../../freeRTOS/src/ \
                          ../../printf/README.md
 
 # This tag can be used to specify the character encoding of the source files
