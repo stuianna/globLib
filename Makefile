@@ -34,11 +34,14 @@ cleanstm32f767zi:
 
 # Templates
 templates:
-	@echo -e "\033[0;32m[Compiling STM32F767ZI Template]\033[0m"
-	@cd template/stm32f767zi; make
+	@echo -e "\033[0;32m[Compiling STM32F767ZI Bare Template]\033[0m"
+	@cd template/stm32f767zi/bare; make
+	@echo -e "\033[0;32m[Compiling STM32F767ZI freeRTOS Template]\033[0m"
+	@cd template/stm32f767zi/freeRTOS; make
 
 cleantemplates:
-	@cd template/stm32f767zi; make clean
+	@cd template/stm32f767zi/bare; make clean
+	@cd template/stm32f767zi/freeRTOS; make clean
 
 # Documentation
 docs:

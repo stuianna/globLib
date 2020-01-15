@@ -12,7 +12,7 @@ SRCDIR=src
 LIBDIR=lib
 OBJDIR=obj
 
-GLOB_LIB=/home/stuart/Dropbox/git/globLib_mk2
+GLOB_LIB=
 
 # Startup File
 # Choose the correct one from lib/CMSIS/startup

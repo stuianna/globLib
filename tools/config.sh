@@ -7,7 +7,9 @@ CURDIR=$(pwd)
 PREFIX='GLOB_LIB='
 GLOBPATH="$PREFIX$CURDIR"
 
-sed -i '/'"$PREFIX"'/c\'"$GLOBPATH"'' template/stm32f767zi/Makefile
-sed -i '/'"$PREFIX"'/c\'"$GLOBPATH"'' template/stm32f767zi/.ycm_extra_conf.py
+sed -i '/'"$PREFIX"'/c\'"$GLOBPATH"'' template/stm32f767zi/bare/Makefile
+#sed -i '/'"$PREFIX"'/c\'"$GLOBPATH"'' template/stm32f767zi/bare/.ycm_extra_conf.py
+
+sed -i '/'"$PREFIX"'/c\'"$GLOBPATH"'' template/stm32f767zi/freeRTOS/Makefile
 
 

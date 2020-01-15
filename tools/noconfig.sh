@@ -5,4 +5,5 @@
 
 PREFIX='GLOB_LIB='
 
-sed -i '/'"$PREFIX"'/c\'"$PREFIX"'' template/stm32f767zi/Makefile
+sed -i '/'"$PREFIX"'/c\'"$PREFIX"'' template/stm32f767zi/freeRTOS/Makefile
+sed -i '/'"$PREFIX"'/c\'"$PREFIX"'' template/stm32f767zi/bare/Makefile
