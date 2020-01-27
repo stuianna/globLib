@@ -80,6 +80,7 @@ void freeRTOS_serial_TXTask(void *pvParameter){
 	uint8_t buffPos = 0;
 	uint8_t buffer[TX_DMA_BUFFER_SIZE];
 	uint8_t secondary = 0;
+	uint8_t ready = 0;
 
 	while(1){
 
@@ -89,7 +90,7 @@ void freeRTOS_serial_TXTask(void *pvParameter){
 		}
 
 		// Make sure the DMA has finished flushing the buffer.
-		if(ulTaskNotifyTake(pdTRUE,pdMS_TO_TICKS(TX_DMA_EMPTY_BLOCK_MS)) == 0){
+		if((ulTaskNotifyTake(pdTRUE,pdMS_TO_TICKS(TX_DMA_EMPTY_BLOCK_MS))) == 0 && (!ready)){
 			continue;
 		}
 
@@ -97,6 +98,9 @@ void freeRTOS_serial_TXTask(void *pvParameter){
 			freeRTOS_serial_initiateTX(&buffer[TX_DMA_HALF_BUFFER * secondary],buffPos);
 			buffPos = 0;
 			secondary = !secondary & 0x1;;
+			ready = 0;
+		}else{
+			ready = 1;
 		}
 	}
 }
